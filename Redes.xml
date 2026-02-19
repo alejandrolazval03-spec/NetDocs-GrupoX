@@ -16,7 +16,7 @@
             <tipo><![CDATA[ HTTPS (HTTP Secure)]]></tipo>
             <definicion>
         <![CDATA[
-            Combina HTTP con cifrado SSL/TLS (Secure Sockets Layer / Transport
+            Combina HTTP con cifrado SSL/TLS (Secur e Sockets Layer / Transport
             Layer Security). Cifra toda la comunicación entre navegador y servidor
             web, protegiendo contraseñas, datos bancarios y comunicaciones
             privadas. Esencial para comercio electrónico, banca online y cualquier sitio
@@ -45,7 +45,7 @@
             <tipo><![CDATA[ Firewalls]]></tipo>
             <definicion>
         <![CDATA[
-           Dispositivos (hardware) o software que actúan como barreras de
+           Dispositivos  (hardware) o software que actúan como barreras de
             seguridad, filtrando el tráfico de red según reglas predefinidas. Bloquean
             accesos no autorizados permitiendo solo conexiones legítimas. Funcionan
             analizando direcciones IP de origen/destino, puertos, protocolos y patrones
