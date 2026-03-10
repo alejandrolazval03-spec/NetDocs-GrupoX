@@ -153,33 +153,28 @@
     <seccion id="hardware" nombre="Hardware">
       <bloque titulo="Medios de Transmisión">
         <tabla titulo="Cable Par Trenzado">
-          <col nombre="Categoría" />
-          <col nombre="Velocidad" />
-          <col nombre="Alcance" />
-          <col nombre="Descripción" />
-          <fila>
-            <c>Cat5e</c>
-            <c>1Gbps</c>
-            <c>100m</c>
-            <c>Hasta 1 Gbps, 100m máx. Uso: Hogares, oficinas pequeñas. Económico y suficiente para
-              la mayoría.</c>
-          </fila>
-          <fila>
-            <c>Cat6</c>
-            <c>10Gbps</c>
-            <c>55m</c>
-            <c>Hasta 10 Gbps en 55m, 1 Gbps en 100m. Uso: Oficinas profesionales, estudios de
-              diseño. Mejor blindaje contra interferencias.</c>
-          </fila>
-          <fila>
-            <c>Cat6a_7</c>
-            <c>10Gbps</c>
-            <c>100m</c>
-            <c>10 Gbps sostenidos en 100m. Uso: Datacenters, infraestructuras exigentes. Máximo
-              blindaje (S/FTP).</c>
-          </fila>
+
         </tabla>
 
+        <tarjetas>
+          <tarjeta titulo="Cable Cat 5e" sub="Hasta 100m">
+            <parrafo>Hasta 1 Gbps, 100m máx. Uso: Hogares, oficinas pequeñas. Económico y suficiente
+              para la mayoría.</parrafo>
+          </tarjeta>
+
+          <tarjeta titulo="Cable Cat 6" sub="55m - 100m">
+            <parrafo>Hasta 10 Gbps en 55m, 1 Gbps en 100m. Uso: Oficinas profesionales, estudios de
+              diseño. Mejor blindaje contra interferencias.</parrafo>
+          </tarjeta>
+
+          <tarjeta titulo="Cable Cat 6a/7" sub="Sostenidos 100m">
+            <parrafo>10 Gbps sostenidos en 100m. Uso: Datacenters, infraestructuras exigentes.
+              Máximo blindaje (S/FTP).</parrafo>
+          </tarjeta>
+        </tarjetas>
+        <tabla titulo="Fibra optica">
+
+        </tabla>
         <tarjetas>
           <tarjeta titulo="Fibra Óptica Monomodo" sub="100km+">
             <parrafo>Núcleo de 9 micrómetros. Un solo haz de luz. Distancias: 40-100+ km sin
