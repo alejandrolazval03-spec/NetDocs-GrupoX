@@ -8,221 +8,178 @@
     <documento titulo="Caracteristicas de las Redes de Computadoras">
 
 
-        <!--pagina
-        4-->
-        <pagina numero="4">
+       <pagina numero="4">
             <seccion>
                 <titulo><![CDATA[# Tipos de Conexión: Guiadas e Inalámbricas]]></titulo>
 
                 <subseccion>
                     <subtitulo><![CDATA[## Conexiones por Cable (Medios Guiados)]]></subtitulo>
-                <parrafo><![CDATA[Las conexiones físicas ofrecen mayor estabilidad, 
-                    seguridad y velocidades predecibles, aunque limitan la movilidad.]]>
-                </parrafo>
+                    <parrafo><![CDATA[Las conexiones físicas ofrecen mayor estabilidad, seguridad y velocidades predecibles, aunque limitan la movilidad.]]></parrafo>
 
-                <subsubseccion>
+                    <subsubseccion>
                         <subtitulo><![CDATA[### Ethernet (Par Trenzado)]]></subtitulo>
-
-                        <parrafo><![CDATA[El estándar dominante en redes LAN. 
-                        Utiliza cables de cobre con pares de hilos trenzados que reducen interferencias electromagnéticas.]]>
-                    </parrafo>
-
+                        <parrafo><![CDATA[El estándar dominante en redes LAN. Utiliza cables de cobre con pares de hilos trenzados que reducen interferencias electromagnéticas.]]></parrafo>
                         <lista tipo="vineta">
-                            <elemento><![CDATA[* **Cat5e:** Hasta 1 Gbps, 100 metros máximo]]></elemento>
-                            <elemento><![CDATA[* **Cat6:** Hasta 10 Gbps en distancias cortas]]></elemento>
-                            <elemento><![CDATA[* **Cat6a/Cat7:** 10 Gbps sostenidos, blindaje mejorado]]></elemento>
+                            <elemento><![CDATA[Cat5e: Hasta 1 Gbps, 100 metros máximo]]></elemento>
+                            <elemento><![CDATA[Cat6: Hasta 10 Gbps en distancias cortas]]></elemento>
+                            <elemento><![CDATA[Cat6a/Cat7: 10 Gbps sostenidos, blindaje mejorado]]></elemento>
                         </lista>
-                        <parrafo><![CDATA[**Ventajas:** Alta velocidad, bajo coste, estabilidad. **Uso:** Oficinas, hogares, centros de datos.]]></parrafo>
-                    </subsubseccion> , <subsubseccion>
+                        <parrafo><![CDATA[Ventajas: Alta velocidad, bajo coste, estabilidad. Uso: Oficinas, hogares, centros de datos.]]></parrafo>
+                    </subsubseccion>
+
+                    <subsubseccion>
                         <subtitulo><![CDATA[### Fibra Óptica]]></subtitulo>
-                        <parrafo><![CDATA[Transmite datos mediante pulsos de luz a través de filamentos de vidrio o plástico ultrapuros. 
-                        Tecnología de mayor rendimiento disponible.]]>
-                    </parrafo>
-
+                        <parrafo><![CDATA[Transmite datos mediante pulsos de luz a través de filamentos de vidrio o plástico ultrapuros. Tecnología de mayor rendimiento disponible.]]></parrafo>
                         <lista tipo="vineta">
-                            <elemento><![CDATA[* **Monomodo:** Un solo haz de luz, largas distancias (100+ km), costosa]]></elemento>
-                            <elemento><![CDATA[* **Multimodo:** Múltiples haces, distancias cortas (2 km), más económica]]></elemento>
+                            <elemento><![CDATA[Monomodo: Un solo haz de luz, largas distancias (100+ km), costosa]]></elemento>
+                            <elemento><![CDATA[Multimodo: Múltiples haces, distancias cortas (2 km), más económica]]></elemento>
                         </lista>
-                        <parrafo><![CDATA[**Ventajas:** Velocidades de Terabits/s, inmune a interferencias, 
-                        distancias enormes. **Uso:** Redes troncales, ISPs, datacenters.]]>
-                    </parrafo>
+                        <parrafo><![CDATA[Ventajas: Velocidades de Terabits/s, inmune a interferencias, distancias enormes. Uso: Redes troncales, ISPs, datacenters.]]></parrafo>
                     </subsubseccion>
                 </subseccion>
 
                 <subseccion>
                     <subtitulo><![CDATA[## Conexiones Inalámbricas (Medios No Guiados)]]></subtitulo>
-
-                    <parrafo><![CDATA[Utilizan ondas electromagnéticas para transmitir datos sin cables físicos, 
-                    proporcionando movilidad y flexibilidad.]]>
-                </parrafo>
+                    <parrafo><![CDATA[Utilizan ondas electromagnéticas para transmitir datos sin cables físicos, proporcionando movilidad y flexibilidad.]]></parrafo>
 
                     <subsubseccion>
                         <subtitulo><![CDATA[### Wi-Fi (Estándares 802.11)]]></subtitulo>
-                        <parrafo><![CDATA[Utiliza ondas de radio en las bandas de 2.4 GHz, 5 GHz y 6 GHz (Wi-Fi 6E).
-                         Permite movilidad total dentro del área de cobertura.]]>
-                        </parrafo>
-
-
+                        <parrafo><![CDATA[Utiliza ondas de radio en las bandas de 2.4 GHz, 5 GHz y 6 GHz (Wi-Fi 6E). Permite movilidad total dentro del área de cobertura.]]></parrafo>
                         <lista tipo="vineta">
-                            <elemento><![CDATA[* **Alcance:** 30-100 metros (interior/exterior)]]></elemento>
-                            <elemento><![CDATA[* **Velocidad:** Hasta 9.6 Gbps (802.11ax Wi-Fi 6)]]></elemento>
-                            <elemento><![CDATA[* **Flexibilidad para dispositivos móviles**]]></elemento>
+                            <elemento><![CDATA[Alcance: 30-100 metros (interior/exterior)]]></elemento>
+                            <elemento><![CDATA[Velocidad: Hasta 9.6 Gbps (802.11ax Wi-Fi 6)]]></elemento>
+                            <elemento><![CDATA[Flexibilidad para dispositivos móviles]]></elemento>
                         </lista>
-                        <parrafo><![CDATA[**Desventajas:** Susceptible a interferencias, menor seguridad que cable,
-                         velocidad variable según distancia y obstáculos.]]>
-                        </parrafo>
+                        <parrafo><![CDATA[Desventajas: Susceptible a interferencias, menor seguridad que cable, velocidad variable según distancia y obstáculos.]]></parrafo>
                     </subsubseccion>
 
                     <subsubseccion>
                         <subtitulo><![CDATA[### Redes Híbridas]]></subtitulo>
-                        <parrafo><![CDATA[Combinan lo mejor de ambos mundos: conexiones cableadas para equipos fijos 
-                        que requieren máximo rendimiento y Wi-Fi para dispositivos móviles.]]>
-                    </parrafo>
-
-                        <parrafo><![CDATA[**Ejemplo típico:** Una oficina con servidores y PCs de escritorio conectados por Ethernet Gigabit, 
-                        pero portátiles, tablets y smartphones usando Wi-Fi 6 para movilidad.]]>
-                    </parrafo>
+                        <parrafo><![CDATA[Combinan lo mejor de ambos mundos: conexiones cableadas para equipos fijos que requieren máximo rendimiento y Wi-Fi para dispositivos móviles.]]></parrafo>
+                        <parrafo><![CDATA[Ejemplo típico: Una oficina con servidores y PCs de escritorio conectados por Ethernet Gigabit, pero portátiles, tablets y smartphones usando Wi-Fi 6 para movilidad.]]></parrafo>
                         <parrafo><![CDATA[Esta es la configuración más común y recomendada actualmente.]]></parrafo>
-
                     </subsubseccion>
                 </subseccion>
             </seccion>
         </pagina>
 
-
-        <!--pagina
-        5-->
         <pagina numero="5">
             <seccion>
                 <titulo><![CDATA[# Modelo OSI: Las 7 Capas de la Comunicación]]></titulo>
-                <parrafo><![CDATA[El modelo OSI (Open Systems Interconnection) es un modelo estandarizado teórico y
-                 modular desarrollado por la ISO que divide el proceso de comunicación en red en 7 capas independientes.]]>
-                </parrafo>
-
-                <parrafo><![CDATA[ISO (Organización Internacional de Normalización) es una **entidad independiente que desarrolla y
-                 publica estándares (normas) internacionales** para asegurar la calidad, seguridad y eficiencia de productos, servicios y sistemas.]]>
-                </parrafo>
-
-                <parrafo><![CDATA[Su diseño modular permite que si algo falla, los técnicos puedan identificar rápidamente en qué capa está el problema, 
-                facilitando el diagnóstico y la reparación.]]>
-            </parrafo>
+                <parrafo><![CDATA[El modelo OSI (Open Systems Interconnection) es un modelo estandarizado teórico y modular desarrollado por la ISO que divide el proceso de comunicación en red en 7 capas independientes.]]></parrafo>
+                <parrafo><![CDATA[ISO (Organización Internacional de Normalización) es una entidad independiente que desarrolla y publica estándares (normas) internacionales para asegurar la calidad, seguridad y eficiencia de productos, servicios y sistemas.]]></parrafo>
+                <parrafo><![CDATA[Su diseño modular permite que si algo falla, los técnicos puedan identificar rápidamente en qué capa está el problema, facilitando el diagnóstico y la reparación.]]></parrafo>
 
                 <capas>
                     <capa numero="7">
-                        <nombre><![CDATA[**7. Aplicación**]]></nombre>
-                        <descripcion><![CDATA[Interfaz directa con el usuario final. Aquí operan navegadores web, clientes de correo,
-                         aplicaciones de mensajería. Protocolos: HTTP, FTP, SMTP, DNS.]]>
-                        </descripcion>
+                        <nombre><![CDATA[7. Aplicación]]></nombre>
+                        <descripcion><![CDATA[Interfaz directa con el usuario final. Aquí operan navegadores web, clientes de correo, aplicaciones de mensajería. Protocolos: HTTP, FTP, SMTP, DNS.]]></descripcion>
                     </capa>
-
                     <capa numero="6">
-                        <nombre><![CDATA[**6. Presentación**]]></nombre>
-                        <descripcion><![CDATA[Formato y representación de datos. Cifrado, compresión y conversión de formatos (JPEG, MP3, SSL/TLS).
-                         Garantiza que el emisor y receptor "hablen el mismo idioma".]]>
-                        </descripcion>
+                        <nombre><![CDATA[6. Presentación]]></nombre>
+                        <descripcion><![CDATA[Formato y representación de datos. Cifrado, compresión y conversión de formatos (JPEG, MP3, SSL/TLS). Garantiza que el emisor y receptor "hablen el mismo idioma".]]></descripcion>
                     </capa>
-
                     <capa numero="5">
-                        <nombre><![CDATA[**5. Sesión**]]></nombre>
-                        <descripcion><![CDATA[Gestiona el diálogo entre aplicaciones. Establece, mantiene y finaliza sesiones de comunicación. 
-                        Control de tokens y sincronización de datos.]]>
-                    </descripcion>
+                        <nombre><![CDATA[5. Sesión]]></nombre>
+                        <descripcion><![CDATA[Gestiona el diálogo entre aplicaciones. Establece, mantiene y finaliza sesiones de comunicación. Control de tokens y sincronización de datos.]]></descripcion>
                     </capa>
-
                     <capa numero="4">
-                        <nombre><![CDATA[**4. Transporte**]]></nombre>
-                        <descripcion><![CDATA[Entrega confiable de datos extremo a extremo. Segmentación, control de flujo y corrección de errores.
-                         Protocolos principales: TCP (fiable, orientado a conexión) y UDP (rápido, sin conexión).]]>
-                        </descripcion>
+                        <nombre><![CDATA[4. Transporte]]></nombre>
+                        <descripcion><![CDATA[Entrega confiable de datos extremo a extremo. Segmentación, control de flujo y corrección de errores. Protocolos principales: TCP (fiable, orientado a conexión) y UDP (rápido, sin conexión).]]></descripcion>
                     </capa>
-
                     <capa numero="3">
-                        <nombre><![CDATA[**3. Red**]]></nombre>
-                        <descripcion><![CDATA[Direccionamiento lógico (IP) y enrutamiento de paquetes. Los routers operan aquí,
-                         decidiendo la mejor    ruta para cada paquete. Protocolo principal: IP (IPv4/IPv6).]]>
-                        </descripcion>
+                        <nombre><![CDATA[3. Red]]></nombre>
+                        <descripcion><![CDATA[Direccionamiento lógico (IP) y enrutamiento de paquetes. Los routers operan aquí, decidiendo la mejor ruta para cada paquete. Protocolo principal: IP (IPv4/IPv6).]]></descripcion>
                     </capa>
-
                     <capa numero="2">
-                        <nombre><![CDATA[**2. Enlace de Datos**]]></nombre>
-                        <descripcion><![CDATA[Direccionamiento físico (MAC), control de acceso al medio, detección de errores en el nivel de trama.
-                         Los switches operan en esta capa. Protocolos: Ethernet, Wi-Fi (802.11).]]>
-                        </descripcion>
+                        <nombre><![CDATA[2. Enlace de Datos]]></nombre>
+                        <descripcion><![CDATA[Direccionamiento físico (MAC), control de acceso al medio, detección de errores en el nivel de trama. Los switches operan en esta capa. Protocolos: Ethernet, Wi-Fi (802.11).]]></descripcion>
                     </capa>
                     <capa numero="1">
-                        <nombre><![CDATA[**1. Física**]]></nombre>
-                        <descripcion><![CDATA[Hardware puro: cables, conectores, voltajes, frecuencias de radio. 
-                        Transmisión de bits en bruto (0s y 1s) a través del medio físico. Especificaciones de cables Cat6, fibra óptica, ondas Wi-Fi.]]>
-                    </descripcion>
+                        <nombre><![CDATA[1. Física]]></nombre>
+                        <descripcion><![CDATA[Hardware puro: cables, conectores, voltajes, frecuencias de radio. Transmisión de bits en bruto (0s y 1s) a través del medio físico. Especificaciones de cables Cat6, fibra óptica, ondas Wi-Fi.]]></descripcion>
                     </capa>
                 </capas>
             </seccion>
         </pagina>
 
-
-        <!--pagina
-        7-->
-        <pagina numero="7">
+       <pagina numero="7">
             <seccion>
                 <titulo><![CDATA[# Protocolos de Comunicación: Las Reglas del Juego Digital]]></titulo>
-                <parrafo><![CDATA[Los protocolos son conjuntos de reglas estandarizadas que definen cómo los dispositivos se comunican en una red.
-                 Sin estos acuerdos universales, los diferentes sistemas no podrían entenderse entre sí, haciendo imposible la comunicación global.]]>
-                </parrafo>
+                <parrafo><![CDATA[Los protocolos son conjuntos de reglas estandarizadas que definen cómo los dispositivos se comunican en una red. Sin estos acuerdos universales, los diferentes sistemas no podrían entenderse entre sí, haciendo imposible la comunicación global. [cite: 563, 564, 565]]]></parrafo>
 
                 <subseccion>
                     <subtitulo><![CDATA[## Protocolos de Transporte]]></subtitulo>
-
                     <protocolo nombre="TCP">
-                        <parrafo><![CDATA[**Orientado a conexión:** Establece un "canal" antes de transmitir (triple apretón de manos: SYN, SYN-ACK, ACK).]]></parrafo>
-                        <parrafo><![CDATA[**Fiable:** Verifica que todos los datos lleguen y en el orden correcto. Si faltan paquetes, los retransmite automáticamente.]]></parrafo>
-                        <parrafo><![CDATA[**Usos:** Navegación web (HTTP/HTTPS), correo electrónico (SMTP/IMAP), descarga de archivos (FTP), SSH. 
-                        Cualquier aplicación donde la integridad de datos es crítica.]]>
-                    </parrafo>
-                        <parrafo><![CDATA[**Desventaja:** Mayor latencia debido a las confirmaciones.]]></parrafo>
+                        <parrafo><![CDATA[Orientado a conexión: Establece un "canal" antes de transmitir (triple apretón de manos: SYN, SYN-ACK, ACK). [cite: 567, 568]]]></parrafo>
+                        <parrafo><![CDATA[Fiable: Verifica que todos los datos lleguen y en el orden correcto. Si faltan paquetes, los retransmite automáticamente. [cite: 569]]]></parrafo>
+                        <parrafo><![CDATA[Usos: Navegación web (HTTP/HTTPS), correo electrónico (SMTP/IMAP), descarga de archivos (FTP), SSH. Cualquier aplicación donde la integridad de datos es crítica. [cite: 570, 571]]]></parrafo>
+                        <parrafo><![CDATA[Desventaja: Mayor latencia debido a las confirmaciones. [cite: 572]]]></parrafo>
                     </protocolo>
 
                     <protocolo nombre="UDP">
-                        <parrafo><![CDATA[**Sin conexión:** "Dispara y olvida". No establece canal previo.]]></parrafo>
-                        <parrafo><![CDATA[**No fiable:** No garantiza entrega ni orden. No hay retransmisiones automáticas.]]></parrafo>
-                        <parrafo><![CDATA[**Usos:** Streaming de video/audio (Netflix, Spotify), videollamadas (Zoom, Teams), 
-                        juegos online multijugador, DNS. Aplicaciones donde la velocidad es más importante que la perfección.]]>
-                    </parrafo>
-                        <parrafo><![CDATA[**Ventaja:** Mínima latencia, ideal para tiempo real.]]></parrafo>
+                        <parrafo><![CDATA[Sin conexión: "Dispara y olvida". No establece canal previo. [cite: 573, 574]]]></parrafo>
+                        <parrafo><![CDATA[No fiable: No garantiza entrega ni orden. No hay retransmisiones automáticas. [cite: 575]]]></parrafo>
+                        <parrafo><![CDATA[Usos: Streaming de video/audio (Netflix, Spotify), videollamadas (Zoom, Teams), juegos online multijugador, DNS. [cite: 576]]]></parrafo>
+                        <parrafo><![CDATA[Ventaja: Mínima latencia, ideal para tiempo real. [cite: 578]]]></parrafo>
+                    </protocolo>
+                </subseccion>
+
+                <subseccion>
+                    <subtitulo><![CDATA[## Protocolos de Aplicación y Red]]></subtitulo>
+                    
+                    <protocolo nombre="IP (Internet Protocol)">
+                        <parrafo><![CDATA[El "GPS" de Internet. Direccionamiento lógico (ej: 192.168.1.1) y enrutamiento de paquetes. [cite: 580, 581]]]></parrafo>
+                        <parrafo><![CDATA[Define cómo fragmentar datos y cómo los routers determinan la mejor ruta hacia el destino. [cite: 582]]]></parrafo>
+                    </protocolo>
+
+                    <protocolo nombre="HTTP/HTTPS">
+                        <parrafo><![CDATA[HTTP: Protocolo de transferencia de hipertexto. Base de la web. [cite: 583, 584]]]></parrafo>
+                        <parrafo><![CDATA[HTTPS: HTTP + cifrado SSL/TLS. Protege datos sensibles (contraseñas, tarjetas de crédito). El candado en el navegador indica HTTPS activo. [cite: 584, 585]]]></parrafo>
+                    </protocolo>
+
+                    <protocolo nombre="SMTP/IMAP/POP3">
+                        <parrafo><![CDATA[SMTP: Envío de correos. IMAP: Recepción sincronizada (mensajes en servidor). POP3: Recepción descargando al dispositivo local. [cite: 586, 587]]]></parrafo>
+                        <parrafo><![CDATA[IMAP es el estándar moderno recomendado. [cite: 588]]]></parrafo>
+                    </protocolo>
+
+                    <protocolo nombre="DNS (Domain Name System)">
+                        <parrafo><![CDATA[Traduce nombres de dominio legibles (www.ejemplo.com) a direcciones IP numéricas (93.184.216.34). La "guía telefónica" de Internet. [cite: 589, 590]]]></parrafo>
+                        <parrafo><![CDATA[Sin DNS tendríamos que memorizar números IP. [cite: 591]]]></parrafo>
                     </protocolo>
                 </subseccion>
 
                 <tabla titulo="Tabla de Protocolos de Comunicación">
-                    <parrafo><![CDATA[Esta es fundamental para ver la diferencia entre "calidad" y "velocidad".]]></parrafo>
-
+                    <parrafo><![CDATA[Esta es fundamental para ver la diferencia entre "calidad" y "velocidad". [cite: 593]]]></parrafo>
                     <encabezado>
-                        <celda><![CDATA[**Característica**]]></celda>
-                        <celda><![CDATA[**TCP (Transmission Control Protocol)**]]></celda>
-                        <celda><![CDATA[**UDP (User Datagram Protocol)**]]></celda>
+                        <celda><![CDATA[Característica]]></celda>
+                        <celda><![CDATA[TCP (Transmission Control Protocol)]]></celda>
+                        <celda><![CDATA[UDP (User Datagram Protocol)]]></celda>
                     </encabezado>
                     <fila>
-                        <celda><![CDATA[**Tipo de conexión**]]></celda>
-                        <celda><![CDATA[Orientado a conexión (requiere "saludo" previo).]]></celda>
-                        <celda><![CDATA[Sin conexión ("enviar y olvidar").]]></celda>
+                        <celda><![CDATA[Tipo de conexión]]></celda>
+                        <celda><![CDATA[Orientado a conexión (requiere "saludo" previo). [cite: 594]]]></celda>
+                        <celda><![CDATA[Sin conexión ("enviar y olvidar"). [cite: 594]]]></celda>
                     </fila>
                     <fila>
-                        <celda><![CDATA[**Fiabilidad**]]></celda>
-                        <celda><![CDATA[Alta. Garantiza que los datos llegan. Reenvía paquetes perdidos.]]></celda>
-                        <celda><![CDATA[Baja. No garantiza la llegada. Si se pierde un paquete, se pierde.]]></celda>
+                        <celda><![CDATA[Fiabilidad]]></celda>
+                        <celda><![CDATA[Alta. Garantiza que los datos llegan. Reenvía paquetes perdidos. [cite: 594]]]></celda>
+                        <celda><![CDATA[Baja. No garantiza la llegada. Si se pierde un paquete, se pierde. [cite: 594]]]></celda>
                     </fila>
                     <fila>
-                        <celda><![CDATA[**Orden**]]></celda>
-                        <celda><![CDATA[Reconstruye los datos en el orden exacto (secuencia).]]></celda>
-                        <celda><![CDATA[No garantiza el orden de llegada.]]></celda>
+                        <celda><![CDATA[Orden]]></celda>
+                        <celda><![CDATA[Reconstruye los datos en el orden exacto (secuencia). [cite: 594]]]></celda>
+                        <celda><![CDATA[No garantiza el orden de llegada. [cite: 594]]]></celda>
                     </fila>
                     <fila>
-                        <celda><![CDATA[**Velocidad**]]></celda>
-                        <celda><![CDATA[Más lento (mayor carga de control).]]></celda>
-                        <celda><![CDATA[Muy rápido (baja latencia).]]></celda>
+                        <celda><![CDATA[Velocidad]]></celda>
+                        <celda><![CDATA[Más lento (mayor carga de control). [cite: 594]]]></celda>
+                        <celda><![CDATA[Muy rápido (baja latencia). [cite: 594]]]></celda>
                     </fila>
                     <fila>
-                        <celda><![CDATA[**Uso ideal**]]></celda>
-                        <celda><![CDATA[Web (HTTP), Correo, Descarga de archivos, Chats de texto.]]></celda>
-                        <celda><![CDATA[Streaming de video, Llamadas VoIP, Juegos online.]]></celda>
+                        <celda><![CDATA[Uso ideal]]></celda>
+                        <celda><![CDATA[Web (HTTP), Correo, Descarga de archivos, Chats de texto. [cite: 594]]]></celda>
+                        <celda><![CDATA[Streaming de video, Llamadas VoIP, Juegos online. [cite: 594]]]></celda>
                     </fila>
                 </tabla>
             </seccion>
