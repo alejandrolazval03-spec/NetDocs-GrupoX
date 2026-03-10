@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="viewer_simple.xsl"?>
+<?xml-stylesheet type="text/xsl" href="archivo_vuestro.xsl"?>
 <pdf_redes lang="es">
     <metadata>
         <titulo>Redes y Seguridad</titulo>
-        <subtitulo>Apuntes de Redes (Rubén )</subtitulo>
+        <subtitulo>Apuntes de Redes (Rubén Galay, Song Qi, Alejandro Lazaro)</subtitulo>
     </metadata>
 
     <secciones>
@@ -22,27 +22,37 @@
                 <tarjetas>
                     <tarjeta titulo="Interoperabilidad">
                         <parrafo tipo="definicion">
-                            Capacidad de conectar equipos de distintos fabricantes y sistemas
-                            operativos sin incompatibilidades
-                            gracias a protocolos estándar y arquitecturas abiertas.
+                            Capacidad crucial de conectar equipos de
+                            distintos fabricantes y sistemas operativos
+                            sin incompatibilidades.
+                            Por ejemplo, un ordenador Windows puede
+                            colaborar perfectamente con un Mac, un
+                            servidor Linux y dispositivos Android en la
+                            misma red gracias a protocolos estándar y
+                            arquitecturas abiertas.
                         </parrafo>
                     </tarjeta>
                     <tarjeta titulo="Escalabilidad">
                         <parrafo tipo="definicion">
-                            Capacidad de la red para crecer y añadir nuevos usuarios o servicios sin
-                            degradar el rendimiento
-                            existente, diseñando con margen para el futuro.
+                            La red debe poder crecer y adaptarse a las
+                            necesidades cambiantes de la organización.
+                            Esto significa añadir nuevos usuarios,
+                            dispositivos o servicios sin degradar el
+                            rendimiento existente. Una red escalable se
+                            diseña pensando en el futuro, con margen
+                            de crecimiento en ancho de banda y
+                            capacidad de procesamiento.
                         </parrafo>
                     </tarjeta>
                     <tarjeta titulo="Seguridad">
                         <parrafo tipo="definicion">
-                                 Protección integral contra amenazas
-                                digitales (malware, phishing, ataques DDoS,
-                                ransomware) mediante múltiples capas de
-                                defensa:  Firewalls que filtran tráfico no autorizado,
-                                    cifrado de datos en tránsito, VPNs para
-                                    conexiones remotas seguras, y sistemas de
-                                    detección de intrusiones.
+                            Protección integral contra amenazas
+                            digitales (malware, phishing, ataques DDoS,
+                            ransomware) mediante múltiples capas de
+                            defensa: Firewalls que filtran tráfico no autorizado,
+                            cifrado de datos en tránsito, VPNs para
+                            conexiones remotas seguras, y sistemas de
+                            detección de intrusiones.
 
                         </parrafo>
                     </tarjeta>
@@ -51,17 +61,21 @@
 
             <bloque titulo="Conclusión">
                 <parrafo tipo="nota">
-                    Las redes son vitales para el teletrabajo (VPN), la educación a distancia y el
-                    Internet de las Cosas (IoT).
+                    La importancia de las redes en la actualidad es indiscutible: son vitales para
+                    el teletrabajo mediante VPNs corporativas seguras, fundamentales para la
+                    educación a distancia con plataformas de videoconferencia, y esenciales para el
+                    Internet de las Cosas (IoT) que conecta miles de millones de
+                    dispositivos inteligentes en hogares, ciudades y fábricas.
                 </parrafo>
             </bloque>
         </seccion>
 
-        <seccion id="clasificacion" nombre="Clasificación">
-            <bloque titulo="Alcance Geográfico">
+        <seccion id="clasificacion" nombre="Clasificación de redes segun su alcance geografico">
+            <bloque>
                 <parrafo>
-                    Las redes se clasifican por el área que cubren, lo que determina sus
-                    características técnicas y velocidad.
+                    Las redes se clasifican principalmente por el área geográfica que cubren,
+                    determinando sus características técnicas, velocidad de transmisión y casos de
+                    uso específicos.
                 </parrafo>
                 <tarjetas>
                     <tarjeta titulo="PAN" sub="Área Personal">
@@ -84,7 +98,7 @@
             </bloque>
         </seccion>
 
-        <seccion id="metodos" nombre="Métodos de Conexión">
+        <seccion id="metodos" nombre="Tipos de Conexión: Guiadas e Inalámbricas">
             <bloque titulo="Medios Guiados (Cable)">
                 <tabla titulo="Comparativa de Cables">
                     <col nombre="Tecnología" />
@@ -92,24 +106,57 @@
                     <col nombre="Ventajas" />
                     <fila>
                         <c>Ethernet</c>
-                        <c>Par trenzado (Cat5e, Cat6, Cat7). Estándar LAN dominante.</c>
+                        <c>El estándar dominante en redes LAN. Utiliza cables de cobre con
+                            pares de hilos trenzados que reducen interferencias
+                            electromagnéticas.
+                            Cat5e: Hasta 1 Gbps, 100 metros máximo
+                            Cat6: Hasta 10 Gbps en distancias cortas
+                            Cat6a/Cat7: 10 Gbps sostenidos, blindaje mejorado
+                        </c>
                         <c>Estabilidad y bajo coste.</c>
                     </fila>
                     <fila>
                         <c>Fibra Óptica</c>
-                        <c>Pulsos de luz (Monomodo y Multimodo).</c>
+                        <c>Transmite datos mediante pulsos de luz a través de filamentos de
+                            vidrio o plástico ultrapuros. Tecnología de mayor rendimiento
+                            disponible.
+                            Monomodo: Un solo haz de luz, largas distancias (100+ km),
+                            costosa
+                            Multimodo: Múltiples haces, distancias cortas (2 km), más
+                            económica</c>
                         <c>Inmunidad a interferencias y Terabits/s.</c>
                     </fila>
                 </tabla>
             </bloque>
 
-            <bloque titulo="Medios No Guiados (Inalámbricos)">
-                <tarjetas>
-                    <tarjeta titulo="Wi-Fi" sub="802.11">
-                        <parrafo>Bandas de 2.4, 5 y 6 GHz. Alcance de 30-100m. Gran movilidad pero
-                            susceptible a interferencias.</parrafo>
-                    </tarjeta>
-                </tarjetas>
+            <bloque titulo="Medios No Guiados (Inhalámbricos)">
+                <tabla titulo="Comparativa de Cables">
+                    <col nombre="Tecnología" />
+                    <col nombre="Descripción" />
+                    <col nombre="Desventajas" />
+                    <fila>
+                        <c>Wi-Fi (Estándares 802.11)</c>
+                        <c>Utiliza ondas de radio en las bandas de 2.4 GHz, 5 GHz y 6 GHz
+                            (Wi-Fi 6E). Permite movilidad total dentro del área de cobertura.
+                            Alcance: 30-100 metros (interior/exterior)
+                            Velocidad: Hasta 9.6 Gbps (802.11ax Wi-Fi 6)
+                            Flexibilidad para dispositivos móviles.
+                        </c>
+                        <c>Susceptible a interferencias, menor seguridad que
+                            cable, velocidad variable según distancia y obstáculos.</c>
+                    </fila>
+                    <fila>
+                        <c>Fibra Óptica</c>
+                        <c>Transmite datos mediante pulsos de luz a través de filamentos de
+                            vidrio o plástico ultrapuros. Tecnología de mayor rendimiento
+                            disponible.
+                            Monomodo: Un solo haz de luz, largas distancias (100+ km),
+                            costosa
+                            Multimodo: Múltiples haces, distancias cortas (2 km), más
+                            económica</c>
+                        <c>Inmunidad a interferencias y Terabits/s.</c>
+                    </fila>
+                </tabla>
             </bloque>
         </seccion>
     </secciones>
@@ -263,7 +310,198 @@
                 </tarjetas>
             </bloque>
         </seccion>
+        <!-- SECCIÓN ÚNICA CON LAS 6 IMÁGENES ORIGINALES + TRANSCRIPCIÓN COMPLETA DE TODO EL
+        CONTENIDO -->
+        <seccion id="p6"
+            nombre="Modelo TCP/IP: El Estándar Práctico de Internet y Configuración en Windows">
 
+            <!-- IMAGEN 1: Modelo TCP/IP completo -->
+            <bloque titulo="Modelo TCP/IP: El Estándar Práctico de Internet">
+                <imagen id="jo0pD" />
+                <parrafo>
+                    El modelo TCP/IP es el marco práctico sobre el que funciona Internet y la
+                    mayoría de redes modernas. A diferencia del modelo OSI (que es teórico y
+                    educativo), TCP/IP se desarrolló para implementación real y agrupa las 7 capas
+                    OSI en solo 4 capas funcionales más simples.
+                </parrafo>
+                <tarjetas>
+                    <tarjeta titulo="Aplicación">
+                        <parrafo>Combina las capas de Aplicación, Presentación y Sesión del modelo
+                            OSI. Servicios de red que el usuario final ve y utiliza: navegación web
+                            (HTTP/HTTPS), correo electrónico (SMTP, IMAP), transferencia de archivos
+                            (FTP), DNS.</parrafo>
+                    </tarjeta>
+                    <tarjeta titulo="Transporte">
+                        <parrafo>Comunicación host a host, equivalente a la capa 4 de OSI. Gestiona
+                            la entrega confiable (TCP) o rápida sin confirmación (UDP) de datos
+                            entre aplicaciones. Puertos lógicos identifican servicios específicos
+                            (ej: puerto 80 = HTTP, 443 = HTTPS).</parrafo>
+                    </tarjeta>
+                    <tarjeta titulo="Internet">
+                        <parrafo>Equivalente a la capa de Red OSI. El protocolo IP (Internet
+                            Protocol) maneja el direccionamiento lógico y el enrutamiento de
+                            paquetes a través de múltiples redes. IPv4 (32 bits) e IPv6 (128 bits)
+                            son las versiones actuales.</parrafo>
+                    </tarjeta>
+                    <tarjeta titulo="Acceso a la Red">
+                        <parrafo>Fusiona las capas Física y de Enlace de Datos del OSI. Maneja todo
+                            lo relacionado con el hardware y el acceso físico al medio: Ethernet,
+                            Wi-Fi, cables, direcciones MAC, control de acceso al medio compartido.</parrafo>
+                    </tarjeta>
+                </tarjetas>
+                <parrafo type="nota">
+                    Importancia de estos modelos: Ambos garantizan la interoperabilidad global
+                    permitiendo que dispositivos de cualquier fabricante se comuniquen. Dividen
+                    problemas complejos en capas manejables, facilitando el diseño, la enseñanza y
+                    el desarrollo de nuevas tecnologías sin romper las existentes. OSI es ideal para
+                    educación y diagnóstico; TCP/IP es el estándar de facto en implementación real.
+                </parrafo>
+            </bloque>
+
+            <!-- IMAGEN 2: Tabla comparativa OSI vs TCP/IP -->
+            <bloque titulo="Tabla de Arquitectura de Red: Modelos OSI y TCP/IP">
+                <imagen id="hUyw9" />
+                <parrafo>Esta tabla ayuda a visualizar cómo el modelo TCP/IP (el práctico) agrupa
+                    las funciones del modelo OSI (el teórico).</parrafo>
+                <tabla titulo="Comparativa Modelos OSI y TCP/IP">
+                    <col nombre="Capas Modelo OSI (7 Capas)" />
+                    <col nombre="Función Principal" />
+                    <col nombre="Capas Modelo TCP/IP (4 Capas)" />
+                    <col nombre="Protocolos Comunes" />
+                    <fila>
+                        <c>7. Aplicación</c>
+                        <c>Interfaz con el usuario</c>
+                        <c>Aplicación</c>
+                        <c>HTTP, SMTP, FTP</c>
+                    </fila>
+                    <fila>
+                        <c>6. Presentación</c>
+                        <c>Cifrado y formatos (JPG, SSL)</c>
+                        <c>(Incluido en Aplicación)</c>
+                        <c>SSL/TLS, JPEG, ASCII</c>
+                    </fila>
+                    <fila>
+                        <c>5. Sesión</c>
+                        <c>Control de diálogo</c>
+                        <c>(Incluido en Aplicación)</c>
+                        <c>RPC, NetBIOS</c>
+                    </fila>
+                    <fila>
+                        <c>4. Transporte</c>
+                        <c>Fiabilidad y segmentación</c>
+                        <c>Transporte</c>
+                        <c>TCP, UDP</c>
+                    </fila>
+                    <fila>
+                        <c>3. Red</c>
+                        <c>Enrutamiento (La mejor ruta)</c>
+                        <c>Internet</c>
+                        <c>IP, ICMP, OSPF</c>
+                    </fila>
+                    <fila>
+                        <c>2. Enlace de Datos</c>
+                        <c>Acceso al medio y MAC</c>
+                        <c>Acceso a la Red</c>
+                        <c>Ethernet, Wi-Fi, ARP</c>
+                    </fila>
+                    <fila>
+                        <c>1. Física</c>
+                        <c>Cables y señales eléctricas</c>
+                        <c>(Incluido en Acceso a la Red)</c>
+                        <c>Cables UTP, Fibra, Hubs</c>
+                    </fila>
+                </tabla>
+            </bloque>
+
+            <!-- IMAGEN 3: Pruebas con ipconfig y explicaciones -->
+            <bloque titulo="Pruebas Prácticas: Comando ipconfig">
+                <imagen id="7XYEN" />
+                <parrafo>
+                    Vamos a sacar nuestra consola powershell, o la consola cmd, y vamos a poner
+                    ipconfig.
+                </parrafo>
+                <parrafo> Adaptador de LAN inalámbrica Wi-Fi:<br /> Sufijo DNS específico para la
+                    conexión: (vacío)<br /> Vínculo: dirección IPv6 local:
+                    fe80::5946:6a24:ed21:5c25%12<br /> Dirección IPv4: 10.50.0.30<br /> Máscara de
+                    subred: 255.255.255.0<br /> Puerta de enlace predeterminada: 10.50.0.1 </parrafo>
+                <parrafo>
+                    Adaptador de Ethernet Conexión de red Bluetooth: Estado de los medios: medios
+                    desconectados
+                </parrafo>
+                <parrafo type="nota"> 1. Adaptador de LAN inalámbrica Wi-Fi<br /> • Sufijo DNS
+                    específico para la conexión: Tu valor: (Está vacío). Qué es: A veces los routers
+                    asignan un nombre de dominio a la red (como "micasa.local").<br /> • Vínculo:
+                    dirección IPv6 local: fe80::5946:6a24:ed21:5c25%12. Qué es: Es la dirección IP
+                    en formato moderno (IPv6). El término "Local" significa que esta dirección solo
+                    sirve para comunicarse con otros dispositivos dentro de tu misma red local.<br />
+                    • Dirección IPv4: 10.50.0.30. Qué es: Este es el dato más importante. Es la
+                    "matrícula" o identificación de tu ordenador dentro de la red de tu casa u
+                    oficina.<br /> • Máscara de subred: 255.255.255.0. Qué es: Define el tamaño de
+                    la red.<br /> • Puerta de enlace predeterminada: 10.50.0.1. Qué es: Esta es la
+                    dirección IP de tu Router. </parrafo>
+            </bloque>
+
+            <!-- IMAGEN 4: Capturas de configuración de red en Windows -->
+            <bloque titulo="Configuración de red en Windows - Propiedades TCP/IPv4">
+                <imagen id="DnKqw" />
+                <parrafo>
+                    ¿Qué puedes hacer aquí? En esta ventana verás que probablemente está marcado
+                    "Obtener una dirección IP automáticamente". Si necesitas configurar una red de
+                    área local fija, ahí es donde seleccionarías "Usar la siguiente dirección IP"
+                    para copiar los datos que viste antes (Dirección IP, Máscara, Puerta de enlace).
+                </parrafo>
+                <parrafo> Conexiones de red → Botón derecho en la red wifi, y botón derecho en TCP
+                    IPv4.<br /> Propiedades de Wi-Fi → Protocolo de Internet versión 4 (TCP/IPv4) →
+                    Propiedades. </parrafo>
+                <parrafo> En "Propiedades de Protocolo de Internet versión 4 (TCP/IPv4)":<br /> •
+                    Obtener una dirección IP automáticamente<br /> • Servidor DNS preferido:
+                    192.168.1.101<br /> • Servidor DNS alternativo: 8.8.8.8 </parrafo>
+                <parrafo>
+                    Opciones avanzadas → Configuración avanzada de TCP/IP: Dirección IP, Máscara de
+                    subred, Puerta de enlace predeterminada.
+                </parrafo>
+            </bloque>
+
+            <!-- IMAGEN 5: Configuración IPv6 y más capturas -->
+            <bloque titulo="Propiedades IPv6 y Configuración avanzada">
+                <imagen id="VdS3E" />
+                <parrafo> Opción IPv6.<br /> Propiedades de Protocolo de Internet versión 6
+                    (TCP/IPv6):<br /> • Obtener una dirección IPv6 automáticamente<br /> • Obtener
+                    la dirección del servidor DNS automáticamente </parrafo>
+                <parrafo> Dale a botón derecho en el símbolo de windows y ve a conexiones de red.<br />
+                    Luego le daremos a ethernet para ver los datos de la configuración que tenemos. </parrafo>
+                <parrafo>
+                    Nos aparecerá un cuadro muy valioso donde nos dice los datos que hemos podido
+                    comprobar antes desde powerShell, con el comando ipconfig.
+                </parrafo>
+                <parrafo> Red e Internet → Ethernet → Asignación de IP: Automático (DHCP)<br />
+                    Servidores DNS IPv4: 192.168.1.101 (sin cifrar) y 8.8.8.8 (sin cifrar) </parrafo>
+            </bloque>
+
+            <!-- IMAGEN 6: IP pública vs privada y observaciones -->
+            <bloque titulo="¿Cuál es mi dirección IP? IP Privada vs IP Pública">
+                <imagen id="T4tNC" />
+                <parrafo> Vamos hacer unas pequeñas pruebas:
+                    https://www.arsys.es/herramientas/cual-es-mi-ip<br /> Esto nos dará el resultado
+                    de nuestra IP externa. </parrafo>
+                <parrafo>
+                    Descarga opera y utiliza una VPN como bearVPN y ahora comprueba la ip.
+                </parrafo>
+                <parrafo> La diferencia: IP Privada (Local) vs. IP Pública (Externa)<br /> • Tu IP
+                    Pública (La que ves en la web): Es la dirección postal del edificio. Esta la
+                    tiene tu Router, no tu ordenador.<br /> • Tu IP Privada (La que muestra
+                    Windows): Es el número de tu despacho dentro del edificio. Solo sirve para que
+                    el conserje (el Router) sepa a qué habitación llevar los paquetes. </parrafo>
+                <parrafo> ¿Por qué Windows no sabe tu IP externa?<br /> Tu ordenador, en realidad,
+                    no tiene conexión directa con "el mundo exterior". Tu ordenador solo se conecta
+                    al Router. </parrafo>
+                <parrafo type="nota"> Observaciones:<br /> 1. "No está conectado": Fíjate que arriba
+                    dice "Ethernet: No está conectado". Esto significa que ahora mismo ese cable no
+                    funciona o no está puesto.<br /> 2. DNS Manuales: Tienes configurados los DNS de
+                    forma manual. 8.8.8.8: Este es el DNS de Google (usado como respaldo). </parrafo>
+            </bloque>
+
+        </seccion>
         <!-- SECCIÓN PÁGINA 7: PROTOCOLOS DE COMUNICACIÓN -->
         <seccion id="p7" nombre="Protocolos de Comunicación: Las Reglas del Juego Digital">
             <bloque titulo="Las Reglas del Juego Digital">
