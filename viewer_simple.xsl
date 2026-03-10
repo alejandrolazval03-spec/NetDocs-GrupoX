@@ -191,6 +191,12 @@
             </tbody>
         </table>
     </xsl:template>
+    <xsl:template match="pagina">
+        <div class="page-wrapper">
+            <span class="page-tag">Página <xsl:value-of select="@numero" /></span>
+            <xsl:apply-templates />
+        </div>
+    </xsl:template>
 
     <xsl:template match="seccion">
         <section id="sec-{generate-id(.)}">
