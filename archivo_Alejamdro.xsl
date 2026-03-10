@@ -7,7 +7,6 @@
                 <titulo>Redes y Telecomunicaciones</titulo>
                 <subtitulo>Seguridad, Topologías, Hardware y Wi-Fi</subtitulo>
             </metadata>
-
             <secciones>
                 <seccion id="S1" nombre="Seguridad">
                     <bloque id="B1" titulo="Seguridad en Protocolos y Redes">
