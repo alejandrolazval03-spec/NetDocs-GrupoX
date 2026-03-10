@@ -191,12 +191,6 @@
             </tbody>
         </table>
     </xsl:template>
-    <xsl:template match="pagina">
-        <div class="page-wrapper">
-            <span class="page-tag">Página <xsl:value-of select="@numero" /></span>
-            <xsl:apply-templates />
-        </div>
-    </xsl:template>
 
     <xsl:template match="seccion">
         <section id="sec-{generate-id(.)}">
@@ -250,32 +244,5 @@
         </div>
     </xsl:template>
 
-    <xsl:template match="tabla">
-        <h4>
-            <xsl:value-of select="@titulo" />
-        </h4>
-        <table>
-            <thead>
-                <tr>
-                    <xsl:for-each select="encabezado/celda">
-                        <th>
-                            <xsl:value-of select="." />
-                        </th>
-                    </xsl:for-each>
-                </tr>
-            </thead>
-            <tbody>
-                <xsl:for-each select="fila">
-                    <tr>
-                        <xsl:for-each select="celda">
-                            <td>
-                                <xsl:value-of select="." />
-                            </td>
-                        </xsl:for-each>
-                    </tr>
-                </xsl:for-each>
-            </tbody>
-        </table>
-    </xsl:template>
 
 </xsl:stylesheet>
