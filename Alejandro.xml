@@ -69,6 +69,7 @@
       </bloque>
     </seccion>
 
+
     <!-- SECCIÓN TOPOLOGÍAS -->
     <seccion id="topologias" nombre="Topologías">
       <bloque titulo="Topologías de Red y Modos de Conexión">
@@ -117,38 +118,75 @@
       </bloque>
     </seccion>
 
-    <!-- SECCIÓN MODOS DE CONEXIÓN -->
-    <seccion id="modos" nombre="Modos de Conexión">
-      <bloque titulo="Orientado a Conexión vs No Orientado">
+    <!-- modos conexion -->
+    <seccion id="modos-conexion" nombre="Modos de Conexión">
+      <bloque titulo="Modos de Conexión (Lógica de Comunicación)">
+        <parrafo>
+          Existen dos formas principales en las que los dispositivos gestionan el envío de datos a
+          través de la red, dependiendo de si priorizan la fiabilidad o la velocidad.
+        </parrafo>
+      </bloque>
+
+      <bloque titulo="Comparativa de Protocolos">
+        <tarjetas>
+          <tarjeta titulo="Orientado a Conexión (Connection-Oriented)">
+            <parrafo>Protocolo ejemplo: TCP</parrafo>
+            <parrafo tipo="nota">Funcionamiento: "Llama antes de hablar". Establece un canal
+              dedicado mediante triple apretón de manos (SYN, SYN-ACK, ACK).</parrafo>
+            <parrafo tipo="nota">Ventajas: Alta fiabilidad, integridad garantizada. Garantiza orden
+              y retransmite paquetes perdidos.</parrafo>
+            <parrafo tipo="nota">Desventajas: Mayor latencia debido a confirmaciones y
+              establecimiento de sesión.</parrafo>
+          </tarjeta>
+
+          <tarjeta titulo="Sin Conexión (Connectionless)">
+            <parrafo>Protocolo ejemplo: UDP</parrafo>
+            <parrafo tipo="nota">Funcionamiento: "Envía y olvida". No establece sesión previa. Cada
+              paquete viaja independientemente.</parrafo>
+            <parrafo tipo="nota">Ventajas: Máxima velocidad, mínima latencia. Ideal para tiempo
+              real.</parrafo>
+            <parrafo tipo="nota">Uso ideal: Streaming, videollamadas, juegos online donde velocidad
+              &gt; perfección.</parrafo>
+          </tarjeta>
+        </tarjetas>
+      </bloque>
+    </seccion>
+
+    <!-- Tabla topologias -->
+    <seccion id="topologias" nombre="Topologías de Red">
+      <bloque titulo="Tabla de Topologías de Red">
         <tabla>
-          <col nombre="Protocolo" />
-          <col nombre="Funcionamiento" />
-          <col nombre="Características" />
-          <col nombre="Ventajas" />
-          <col nombre="Desventajas" />
-          <col nombre="Uso" />
+          <col nombre="Topología" />
+          <col nombre="Descripción Visual" />
+          <col nombre="Ventaja Principal" />
+          <col nombre="Desventaja Principal" />
           <fila>
-            <c>TCP</c>
-            <c>"Llama antes de hablar". Establece un canal dedicado mediante triple apretón de manos
-              (SYN, SYN-ACK, ACK) antes de transmitir datos.</c>
-            <c>Garantiza orden y llegada de datos. Retransmite paquetes perdidos. Control de flujo y
-              congestión.</c>
-            <c>Alta fiabilidad e integridad</c>
-            <c>Mayor latencia</c>
-            <c>Web, Email, Transferencia de archivos</c>
+            <c>Bus</c>
+            <c>Un solo cable central (troncal) con dispositivos a los lados.</c>
+            <c>Muy barato y fácil de instalar.</c>
+            <c>Si el cable central se rompe, toda la red cae.</c>
           </fila>
           <fila>
-            <c>UDP</c>
-            <c>"Envía y olvida". No establece sesión previa. Cada paquete viaja independientemente.</c>
-            <c>No confirma recepción. No garantiza orden ni entrega.</c>
-            <c>Máxima velocidad y baja latencia</c>
-            <c>No garantiza entrega ni orden</c>
-            <c>Streaming, videollamadas, juegos online</c>
+            <c>Estrella</c>
+            <c>Todos los cables van a un punto central (Switch).</c>
+            <c>Fácil de gestionar; si falla un PC, el resto sigue funcionando.</c>
+            <c>Depende totalmente del Switch central; es más costoso en cableado.</c>
+          </fila>
+          <fila>
+            <c>Anillo</c>
+            <c>Círculo cerrado de dispositivos.</c>
+            <c>Flujo de datos ordenado (sin colisiones).</c>
+            <c>Si un nodo falla, puede romper el ciclo (lento de recuperar).</c>
+          </fila>
+          <fila>
+            <c>Malla</c>
+            <c>Conexiones múltiples entre todos los nodos.</c>
+            <c>Robustez total. Si falla una ruta, hay otras.</c>
+            <c>Es la más cara y compleja de instalar.</c>
           </fila>
         </tabla>
       </bloque>
     </seccion>
-
     <!-- SECCIÓN HARDWARE -->
     <seccion id="hardware" nombre="Hardware">
       <bloque titulo="Medios de Transmisión">
@@ -194,10 +232,81 @@
           especializados para empalmes.</parrafo>
       </bloque>
     </seccion>
+    <!-- Evolucion -->
+    <seccion id="evolucion-wifi" nombre="Evolución Wi-Fi">
+      <bloque titulo="Evolución de los Estándares Wi-Fi (802.11)">
+        <parrafo>
+          El Wi-Fi ha evolucionado dramáticamente en velocidad, eficiencia y capacidad de gestionar
+          dispositivos simultáneos.
+        </parrafo>
+      </bloque>
 
-    <!-- SECCIÓN WI-FI -->
+      <bloque titulo="Línea de Tiempo de Estándares">
+        <tarjetas>
+          <tarjeta titulo="802.11b/g (Wi-Fi 3)">
+            <parrafo>Banda: 2.4 GHz. Velocidad: 11-54 Mbps.</parrafo>
+            <parrafo tipo="nota">Problema: Banda saturadísima (interferencias con microondas,
+              Bluetooth, teléfonos inalámbricos). Obsoleto.</parrafo>
+          </tarjeta>
+
+          <tarjeta titulo="802.11n (Wi-Fi 4)">
+            <parrafo>Banda dual: 2.4 y 5 GHz. Velocidad: Hasta 600 Mbps.</parrafo>
+            <parrafo tipo="nota">Uso: Introduce MIMO (Multiple Input Multiple Output): múltiples
+              antenas para mejor rendimiento. Gran avance en velocidad.</parrafo>
+          </tarjeta>
+
+          <tarjeta titulo="802.11ac (Wi-Fi 5)">
+            <parrafo>Solo 5 GHz. Velocidad: Hasta 3.5 Gbps.</parrafo>
+            <parrafo tipo="nota">Uso: MU-MIMO y Beamforming: Enfoca señal hacia dispositivos
+              específicos. Estándar dominante 2013-2019.</parrafo>
+          </tarjeta>
+
+          <tarjeta titulo="802.11ax (Wi-Fi 6/6E)">
+            <parrafo>Bandas: 2.4, 5 y 6 GHz (6E). Velocidad: Hasta 9.6 Gbps.</parrafo>
+            <parrafo tipo="nota">Ventaja: OFDMA y TWT (Target Wake Time) para reducir consumo en
+              IoT. Ideal para ambientes densos (estadios, aeropuertos). El futuro es Wi-Fi 6E.</parrafo>
+          </tarjeta>
+        </tarjetas>
+      </bloque>
+    </seccion>
+    <!-- Componentes de una Red -->
+    <seccion id="componentes" nombre="Componentes de Red">
+      <bloque titulo="Tabla de Componentes de una Red">
+        <tabla>
+          <col nombre="Medio" />
+          <col nombre="Tipo" />
+          <col nombre="Velocidad / Alcance" />
+          <col nombre="Caso de Uso Típico" />
+          <fila>
+            <c>Cable Par Trenzado (UTP)</c>
+            <c>Guiado (Cobre)</c>
+            <c>1 Gbps - 10 Gbps (Corto alcance &lt;100m).</c>
+            <c>Redes LAN de oficinas, conexión de PC a Switch.</c>
+          </fila>
+          <fila>
+            <c>Fibra Óptica</c>
+            <c>Guiado (Luz)</c>
+            <c>100 Gbps (Largo alcance, kms).</c>
+            <c>Redes troncales (WAN), conexiones entre edificios o ciudades.</c>
+          </fila>
+          <fila>
+            <c>Wi-Fi (802.11)</c>
+            <c>No Guiado (Radio)</c>
+            <c>Variable (depende de obstáculos).</c>
+            <c>Dispositivos móviles, portátiles, zonas comunes.</c>
+          </fila>
+          <fila>
+            <c>Microondas</c>
+            <c>No Guiado (Ondas)</c>
+            <c>Largo alcance (línea de vista).</c>
+            <c>Conectar dos edificios lejanos sin poner cables físicos.</c>
+          </fila>
+        </tabla>
+      </bloque>
+    </seccion>
+    <!-- Redes Inalámbricas -->
     <seccion id="wifi" nombre="Wi-Fi">
-      <bloque titulo="Estándares Wi-Fi">
+      <bloque titulo="Tabla de Redes Inalámbricas">
         <tabla>
           <col nombre="Wi-Fi" />
           <col nombre="Estándar" />
