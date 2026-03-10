@@ -103,30 +103,54 @@
             </seccion>
         </pagina>
 
-        <pagina numero="7">
+       <pagina numero="7">
             <seccion>
                 <titulo><![CDATA[# Protocolos de Comunicación: Las Reglas del Juego Digital]]></titulo>
-                <parrafo><![CDATA[Los protocolos son conjuntos de reglas estandarizadas que definen cómo los dispositivos se comunican en una red. Sin estos acuerdos universales, los diferentes sistemas no podrían entenderse entre sí, haciendo imposible la comunicación global.]]></parrafo>
+                <parrafo><![CDATA[Los protocolos son conjuntos de reglas estandarizadas que definen cómo los dispositivos se comunican en una red. Sin estos acuerdos universales, los diferentes sistemas no podrían entenderse entre sí, haciendo imposible la comunicación global. [cite: 563, 564, 565]]]></parrafo>
 
                 <subseccion>
                     <subtitulo><![CDATA[## Protocolos de Transporte]]></subtitulo>
                     <protocolo nombre="TCP">
-                        <parrafo><![CDATA[Orientado a conexión: Establece un "canal" antes de transmitir (triple apretón de manos: SYN, SYN-ACK, ACK).]]></parrafo>
-                        <parrafo><![CDATA[Fiable: Verifica que todos los datos lleguen y en el orden correcto. Si faltan paquetes, los retransmite automáticamente.]]></parrafo>
-                        <parrafo><![CDATA[Usos: Navegación web (HTTP/HTTPS), correo electrónico (SMTP/IMAP), descarga de archivos (FTP), SSH. Cualquier aplicación donde la integridad de datos es crítica.]]></parrafo>
-                        <parrafo><![CDATA[Desventaja: Mayor latencia debido a las confirmaciones.]]></parrafo>
+                        <parrafo><![CDATA[Orientado a conexión: Establece un "canal" antes de transmitir (triple apretón de manos: SYN, SYN-ACK, ACK). [cite: 567, 568]]]></parrafo>
+                        <parrafo><![CDATA[Fiable: Verifica que todos los datos lleguen y en el orden correcto. Si faltan paquetes, los retransmite automáticamente. [cite: 569]]]></parrafo>
+                        <parrafo><![CDATA[Usos: Navegación web (HTTP/HTTPS), correo electrónico (SMTP/IMAP), descarga de archivos (FTP), SSH. Cualquier aplicación donde la integridad de datos es crítica. [cite: 570, 571]]]></parrafo>
+                        <parrafo><![CDATA[Desventaja: Mayor latencia debido a las confirmaciones. [cite: 572]]]></parrafo>
                     </protocolo>
 
                     <protocolo nombre="UDP">
-                        <parrafo><![CDATA[Sin conexión: "Dispara y olvida". No establece canal previo.]]></parrafo>
-                        <parrafo><![CDATA[No fiable: No garantiza entrega ni orden. No hay retransmisiones automáticas.]]></parrafo>
-                        <parrafo><![CDATA[Usos: Streaming de video/audio (Netflix, Spotify), videollamadas (Zoom, Teams), juegos online multijugador, DNS. Aplicaciones donde la velocidad es más importante que la perfección.]]></parrafo>
-                        <parrafo><![CDATA[Ventaja: Mínima latencia, ideal para tiempo real.]]></parrafo>
+                        <parrafo><![CDATA[Sin conexión: "Dispara y olvida". No establece canal previo. [cite: 573, 574]]]></parrafo>
+                        <parrafo><![CDATA[No fiable: No garantiza entrega ni orden. No hay retransmisiones automáticas. [cite: 575]]]></parrafo>
+                        <parrafo><![CDATA[Usos: Streaming de video/audio (Netflix, Spotify), videollamadas (Zoom, Teams), juegos online multijugador, DNS. [cite: 576]]]></parrafo>
+                        <parrafo><![CDATA[Ventaja: Mínima latencia, ideal para tiempo real. [cite: 578]]]></parrafo>
+                    </protocolo>
+                </subseccion>
+
+                <subseccion>
+                    <subtitulo><![CDATA[## Protocolos de Aplicación y Red]]></subtitulo>
+                    
+                    <protocolo nombre="IP (Internet Protocol)">
+                        <parrafo><![CDATA[El "GPS" de Internet. Direccionamiento lógico (ej: 192.168.1.1) y enrutamiento de paquetes. [cite: 580, 581]]]></parrafo>
+                        <parrafo><![CDATA[Define cómo fragmentar datos y cómo los routers determinan la mejor ruta hacia el destino. [cite: 582]]]></parrafo>
+                    </protocolo>
+
+                    <protocolo nombre="HTTP/HTTPS">
+                        <parrafo><![CDATA[HTTP: Protocolo de transferencia de hipertexto. Base de la web. [cite: 583, 584]]]></parrafo>
+                        <parrafo><![CDATA[HTTPS: HTTP + cifrado SSL/TLS. Protege datos sensibles (contraseñas, tarjetas de crédito). El candado en el navegador indica HTTPS activo. [cite: 584, 585]]]></parrafo>
+                    </protocolo>
+
+                    <protocolo nombre="SMTP/IMAP/POP3">
+                        <parrafo><![CDATA[SMTP: Envío de correos. IMAP: Recepción sincronizada (mensajes en servidor). POP3: Recepción descargando al dispositivo local. [cite: 586, 587]]]></parrafo>
+                        <parrafo><![CDATA[IMAP es el estándar moderno recomendado. [cite: 588]]]></parrafo>
+                    </protocolo>
+
+                    <protocolo nombre="DNS (Domain Name System)">
+                        <parrafo><![CDATA[Traduce nombres de dominio legibles (www.ejemplo.com) a direcciones IP numéricas (93.184.216.34). La "guía telefónica" de Internet. [cite: 589, 590]]]></parrafo>
+                        <parrafo><![CDATA[Sin DNS tendríamos que memorizar números IP. [cite: 591]]]></parrafo>
                     </protocolo>
                 </subseccion>
 
                 <tabla titulo="Tabla de Protocolos de Comunicación">
-                    <parrafo><![CDATA[Esta es fundamental para ver la diferencia entre "calidad" y "velocidad".]]></parrafo>
+                    <parrafo><![CDATA[Esta es fundamental para ver la diferencia entre "calidad" y "velocidad". [cite: 593]]]></parrafo>
                     <encabezado>
                         <celda><![CDATA[Característica]]></celda>
                         <celda><![CDATA[TCP (Transmission Control Protocol)]]></celda>
@@ -134,28 +158,28 @@
                     </encabezado>
                     <fila>
                         <celda><![CDATA[Tipo de conexión]]></celda>
-                        <celda><![CDATA[Orientado a conexión (requiere "saludo" previo).]]></celda>
-                        <celda><![CDATA[Sin conexión ("enviar y olvidar").]]></celda>
+                        <celda><![CDATA[Orientado a conexión (requiere "saludo" previo). [cite: 594]]]></celda>
+                        <celda><![CDATA[Sin conexión ("enviar y olvidar"). [cite: 594]]]></celda>
                     </fila>
                     <fila>
                         <celda><![CDATA[Fiabilidad]]></celda>
-                        <celda><![CDATA[Alta. Garantiza que los datos llegan. Reenvía paquetes perdidos.]]></celda>
-                        <celda><![CDATA[Baja. No garantiza la llegada. Si se pierde un paquete, se pierde.]]></celda>
+                        <celda><![CDATA[Alta. Garantiza que los datos llegan. Reenvía paquetes perdidos. [cite: 594]]]></celda>
+                        <celda><![CDATA[Baja. No garantiza la llegada. Si se pierde un paquete, se pierde. [cite: 594]]]></celda>
                     </fila>
                     <fila>
                         <celda><![CDATA[Orden]]></celda>
-                        <celda><![CDATA[Reconstruye los datos en el orden exacto (secuencia).]]></celda>
-                        <celda><![CDATA[No garantiza el orden de llegada.]]></celda>
+                        <celda><![CDATA[Reconstruye los datos en el orden exacto (secuencia). [cite: 594]]]></celda>
+                        <celda><![CDATA[No garantiza el orden de llegada. [cite: 594]]]></celda>
                     </fila>
                     <fila>
                         <celda><![CDATA[Velocidad]]></celda>
-                        <celda><![CDATA[Más lento (mayor carga de control).]]></celda>
-                        <celda><![CDATA[Muy rápido (baja latencia).]]></celda>
+                        <celda><![CDATA[Más lento (mayor carga de control). [cite: 594]]]></celda>
+                        <celda><![CDATA[Muy rápido (baja latencia). [cite: 594]]]></celda>
                     </fila>
                     <fila>
                         <celda><![CDATA[Uso ideal]]></celda>
-                        <celda><![CDATA[Web (HTTP), Correo, Descarga de archivos, Chats de texto.]]></celda>
-                        <celda><![CDATA[Streaming de video, Llamadas VoIP, Juegos online.]]></celda>
+                        <celda><![CDATA[Web (HTTP), Correo, Descarga de archivos, Chats de texto. [cite: 594]]]></celda>
+                        <celda><![CDATA[Streaming de video, Llamadas VoIP, Juegos online. [cite: 594]]]></celda>
                     </fila>
                 </tabla>
             </seccion>
