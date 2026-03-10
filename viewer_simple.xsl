@@ -52,6 +52,7 @@
           8px;border-radius:99px;font-size:11px;margin-right:6px;font-weight:600}
           strong{color:#7c2d12}
           @media(max-width:800px){.grid{grid-template-columns:1fr}nav{position:relative}}
+
         </style>
       </head>
       <body>
@@ -179,6 +180,92 @@
         <xsl:for-each select="fila">
           <tr>
             <xsl:for-each select="c">
+              <td>
+                <xsl:value-of select="." />
+              </td>
+            </xsl:for-each>
+          </tr>
+        </xsl:for-each>
+      </tbody>
+    </table>
+  </xsl:template>
+  <xsl:template match="pagina">
+    <div class="page-wrapper">
+      <span class="page-tag">Página <xsl:value-of select="@numero" /></span>
+      <xsl:apply-templates />
+    </div>
+  </xsl:template>
+
+  <xsl:template match="seccion">
+    <section id="sec-{generate-id(.)}">
+      <xsl:apply-templates />
+    </section>
+  </xsl:template>
+
+  <xsl:template match="titulo">
+    <h2>
+      <xsl:value-of select="translate(., '#', '')" />
+    </h2>
+  </xsl:template>
+
+  <xsl:template match="subtitulo">
+    <h3 class="subseccion">
+      <xsl:value-of select="translate(., '#', '')" />
+    </h3>
+  </xsl:template>
+
+  <xsl:template match="parrafo">
+    <p>
+      <xsl:value-of select="." />
+    </p>
+  </xsl:template>
+
+  <xsl:template match="lista">
+    <ul>
+      <xsl:for-each select="elemento">
+        <li>
+          <xsl:value-of select="translate(., '*', '')" />
+        </li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
+
+  <xsl:template match="capas/capa">
+    <div class="capa-card">
+      <strong>
+        <xsl:value-of select="nombre" />
+      </strong>
+      <p style="margin:5px 0 0">
+        <xsl:value-of select="descripcion" />
+      </p>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="protocolo">
+    <div class="protocolo-box">
+      <h4>Protocolo: <xsl:value-of select="@nombre" /></h4>
+      <xsl:apply-templates />
+    </div>
+  </xsl:template>
+
+  <xsl:template match="tabla">
+    <h4>
+      <xsl:value-of select="@titulo" />
+    </h4>
+    <table>
+      <thead>
+        <tr>
+          <xsl:for-each select="encabezado/celda">
+            <th>
+              <xsl:value-of select="." />
+            </th>
+          </xsl:for-each>
+        </tr>
+      </thead>
+      <tbody>
+        <xsl:for-each select="fila">
+          <tr>
+            <xsl:for-each select="celda">
               <td>
                 <xsl:value-of select="." />
               </td>
