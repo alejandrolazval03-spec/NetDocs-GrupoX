@@ -178,8 +178,7 @@
                 <parrafo>Las conexiones físicas ofrecen mayor estabilidad, seguridad y velocidades
                     predecibles, aunque limitan la movilidad.</parrafo>
             </bloque>
-            <parrafo tipo="nota">Ventajas: Alta velocidad, bajo coste, estabilidad. Uso: Oficinas,
-                hogares, centros de datos.</parrafo>
+
 
             <bloque id="B10" titulo="Fibra Óptica">
                 <parrafo>Transmite datos mediante pulsos de luz a través de filamentos de vidrio o
@@ -613,8 +612,6 @@
                     </tarjeta>
                 </tarjetas>
             </bloque>
-        </seccion>
-        <seccion id="S10" nombre="Modos de Conexión">
             <bloque id="B33" titulo="Modos de Conexión (Lógica de Comunicación)">
                 <parrafo>Existen dos formas principales en las que los dispositivos gestionan el
                     envío de datos a través de la red, dependiendo de si priorizan la fiabilidad o
@@ -642,8 +639,7 @@
                     </tarjeta>
                 </tarjetas>
             </bloque>
-        </seccion>
-        <seccion id="S11" nombre="Topologías de Red">
+
             <bloque id="B35" titulo="Tabla de Topologías de Red">
                 <tabla>
                     <col nombre="Topología" />
@@ -677,9 +673,8 @@
                 </tabla>
             </bloque>
         </seccion>
-        <seccion id="S12" nombre="Hardware">
-            <bloque id="B36" titulo="Medios de Transmisión">
-                <tabla titulo="Cable Par Trenzado" />
+        <seccion id="S10" nombre="Componentes de Hardware en Redes Informáticas">
+            <bloque id="B36a" titulo="Medios de Transmisión: Cable Par Trenzado">
                 <tarjetas>
                     <tarjeta titulo="Cable Cat 5e" sub="Hasta 100m">
                         <parrafo>Hasta 1 Gbps, 100m máx. Uso: Hogares, oficinas pequeñas. Económico
@@ -694,33 +689,27 @@
                             exigentes. Máximo blindaje (S/FTP).</parrafo>
                     </tarjeta>
                 </tarjetas>
-                </tabla>
-                <tabla titulo="Fibra optica">
-                    <tarjetas>
-                        <tarjeta titulo="Fibra Óptica Monomodo" sub="100km+">
-                            <parrafo>Núcleo de 9 micrómetros. Un solo haz de luz. Distancias:
-                                40-100+ km
-                                sin repetidores. Uso: Enlaces troncales ISP, conexiones entre
-                                ciudades,
-                                cables submarinos intercontinentales. Láser de alta precisión.</parrafo>
-                        </tarjeta>
-                        <tarjeta titulo="Fibra Óptica Multimodo" sub="Hasta 2km">
-                            <parrafo>Núcleo de 50-62.5 micrómetros. Múltiples haces de luz.
-                                Distancias:
-                                Hasta 2 km. Uso: Campus, edificios, datacenters internos. LED más
-                                económico. Velocidades: 10/40/100 Gbps.</parrafo>
-                        </tarjeta>
-
-                    </tarjetas>
-                </tabla>
+            </bloque>
+            <bloque id="B36b" titulo="Medios de Transmisión: Fibra Óptica">
+                <tarjetas>
+                    <tarjeta titulo="Fibra Óptica Monomodo" sub="100km+">
+                        <parrafo>Núcleo de 9 micrómetros. Un solo haz de luz. Distancias: 40-100+ km
+                            sin repetidores. Uso: Enlaces troncales ISP, conexiones entre ciudades,
+                            cables submarinos intercontinentales. Láser de alta precisión.</parrafo>
+                    </tarjeta>
+                    <tarjeta titulo="Fibra Óptica Multimodo" sub="Hasta 2km">
+                        <parrafo>Núcleo de 50-62.5 micrómetros. Múltiples haces de luz. Distancias:
+                            Hasta 2 km. Uso: Campus, edificios, datacenters internos. LED más
+                            económico. Velocidades: 10/40/100 Gbps.</parrafo>
+                    </tarjeta>
+                </tarjetas>
                 <parrafo tipo="nota">Ventajas Fibra: Inmunidad total a interferencias
                     electromagnéticas, sin diafonía, distancias enormes, ancho de banda masivo
                     (Terabits/s), seguridad (difícil interceptar luz)</parrafo>
                 <parrafo tipo="nota">Desventajas Fibra: Coste inicial más alto, requiere técnicos
                     especializados para empalmes.</parrafo>
             </bloque>
-        </seccion>
-        <seccion id="S13" nombre="Evolución Wi-Fi">
+
             <bloque id="B37" titulo="Evolución de los Estándares Wi-Fi (802.11)">
                 <parrafo>El Wi-Fi ha evolucionado dramáticamente en velocidad, eficiencia y
                     capacidad de gestionar dispositivos simultáneos.</parrafo>
@@ -750,8 +739,7 @@
                     </tarjeta>
                 </tarjetas>
             </bloque>
-        </seccion>
-        <seccion id="S14" nombre="Componentes de Red">
+
             <bloque id="B39" titulo="Tabla de Componentes de una Red">
                 <tabla>
                     <col nombre="Medio" />
@@ -784,8 +772,6 @@
                     </fila>
                 </tabla>
             </bloque>
-        </seccion>
-        <seccion id="S15" nombre="Wi-Fi">
             <bloque id="B40" titulo="Tabla de Redes Inalámbricas">
                 <tabla>
                     <col nombre="Wi-Fi" />
