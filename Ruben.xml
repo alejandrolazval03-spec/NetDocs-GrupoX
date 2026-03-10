@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+
+    <!--Pagina uno-->
+
+    <seccion nombre="Fundamentos">
+            <title>Definición y Propiedades Clave de las Redes</title>
+            <descripcion>Una red de computadoras es un conjunto de dispositivos interconectados que comparten recursos (impresoras, servidores, almacenamiento) einformación de manera eficiente.
+                Esta infraestructura digital es el pilar fundamental que permite la comunicación global instantánea y el intercambio de datos en tiempo real.</descripcion>
+            <tipos>
+                    <title>Interoperabilidad</title>
+                        <descripcion>Capacidad crucial de conectar equipos de distintos fabricantes y sistemas operativos sin incompatibilidades.
+                            Por ejemplo, un ordenador Windows puede colaborar perfectamente con un Mac, un servidor Linux y dispositivos Android en la misma red gracias a protocolos estándar y arquitecturas abiertas.</descripcion>
+
+                    <title>Escalabilidad</title>
+                        <descripcion>La red debe poder crecer y adaptarse a las necesidades cambiantes de la organización.
+                            Esto significa añadir nuevos usuarios, dispositivos o servicios sin degradar el rendimiento existente. Una red escalable se diseña pensando en el futuro, con margen de crecimiento en ancho de banda y capacidad de procesamiento.</descripcion>
+
+                    <title>Seguridad</title>
+                        <descripcion>Protección integral contra amenazas digitales (malware, phishing, ataques DDoS, ransomware) mediante múltiples capas de defensa:
+                            Firewalls que filtran tráfico no autorizado, cifrado de datos en tránsito, VPNs para conexiones remotas seguras, y sistemas de detección de intrusiones.</descripcion>
+
+            </tipos>
+            <conclusion>La importancia de las redes en la actualidad es indiscutible: son vitales para el teletrabajo mediante VPNs corporativas seguras, fundamentales para la educación a distancia con plataformas de videoconferencia, y esenciales para el Internet de las Cosas (IoT) que conecta miles de millones de dispositivos inteligentes en hogares, ciudades y fábricas.</conclusion>
+    </seccion>
+
+    <!--Pagina dos-->
+
+    <seccion nombre="Clasificacion">
+            <title>Clasificación de Redes según su Alcance Geográfico</title>
+            <descripcion>Las redes se clasifican principalmente por el área geográfica que cubren, determinando sus características técnicas, velocidad de transmisión y casos de uso específicos.</descripcion>
+            <tipos>
+                    <title>PAN (Red de Área Personal)</title>
+                        <descripcion>Alcance de pocos metros, generalmente hasta 10m. Conecta dispositivos personales cercanos al usuario.
+                            Ejemplo típico: Bluetooth conectando un smartwatch, auriculares inalámbricos o teclado al teléfono móvil. Tecnologías: Bluetooth, NFC, USB. </descripcion>
+
+                    <title>LAN (Red de Área Local)</title>
+                        <descripcion>Cubre edificios individuales o campus pequeños (hasta 1-2 km). Alta velocidad y bajo coste. 
+                            Ejemplo típico: La red Wi-Fi y Ethernet de una oficina, casa, escuela o centro comercial. Permite compartir impresoras, archivos y conexión a Internet.</descripcion>
+
+                    <title>MAN (Red de Área Metropolitana)</title>
+                        <descripcion>Cobertura del tamaño de una ciudad completa (hasta 50 km).
+                            Ejemplo típico: Red que interconecta varios campus universitarios dispersos en una misma ciudad, o red de fibra óptica municipal que conecta edificios gubernamentales.</descripcion>
+
+                    <title>WAN (Red de Área Amplia)</title>
+                        <descripcion>Alcance de pocos metros, generalmente hasta 10m. Conecta dispositivos personales cercanos al usuario.
+                            Ejemplo típico: Bluetooth conectando un smartwatch, auriculares inalámbricos o teclado al teléfono móvil. Tecnologías: Bluetooth, NFC, USB. </descripcion>
+            </tipos>
+        </seccion>
+
+    <!--Pagina tres-->
+
+    <seccion nombre="Metodos">
+            <title>Tipos de Conexión: Guiadas e Inalámbricas
+
+                    <title>Conexiones por Cable (Medios Guiados)
+                        <descripcion>Las conexiones físicas ofrecen mayor estabilidad, seguridad y velocidades predecibles, aunque limitan la movilidad. </descripcion>
+                            
+                            <title>Ethernet (Par Trenzado)
+                                <descripcion>El estándar dominante en redes LAN. Utiliza cables de cobre con pares de hilos trenzados que reducen interferencias electromagnéticas. Cat5e: Hasta 1 Gbps, 100 metros máximo Cat6: Hasta 10 Gbps en distancias cortas Cat6a/Cat7: 10 Gbps sostenidos, blindaje mejorado Ventajas: Alta velocidad, bajo coste, estabilidad. Uso: Oficinas, hogares, centros de datos.</descripcion>
+                            </title>
+
+                            <title>Fibra Óptica
+                                <descripcion>Transmite datos mediante pulsos de luz a través de filamentos de vidrio o plástico ultrapuros. Tecnología de mayor rendimiento disponible.
+                                    - Monomodo: Un solo haz de luz, largas distancias (100+ km), costosa
+                                    - Multimodo: Múltiples haces, distancias cortas (2 km), más económica
+                                    Ventajas: Velocidades de Terabits/s, inmune a interferencias, distancias enormes. Uso: Redes troncales, ISPs, datacenters. 
+                                </descripcion>
+                            </title>
+                    </title>
+            
+                            
+                    <title>Conexiones Inalámbricas (Medios No Guiados)
+                        <descripcion>Utilizan ondas electromagnéticas para transmitir datos sin cables físicos, proporcionando movilidad y flexibilidad. </descripcion>
+                            
+                            <title>Wi-Fi (Estándares 802.11)
+                                <descripcion>Utiliza ondas de radio en las bandas de 2.4 GHz, 5 GHz y 6 GHz (Wi-Fi 6E). Permite movilidad total dentro del área de cobertura.
+                                    - Alcance: 30-100 metros (interior/exterior)
+                                    - Velocidad: Hasta 9.6 Gbps (802.11ax Wi-Fi 6)
+                                    - Flexibilidad para dispositivos móviles
+                                    Desventajas: Susceptible a interferencias, menor seguridad que cable, velocidad variable según distancia y obstáculos.
+                                </descripcion>
+                            </title>
+
+                            <title>Fibra Óptica
+                                <descripcion>Transmite datos mediante pulsos de luz a través de filamentos de vidrio o plástico ultrapuros. Tecnología de mayor rendimiento disponible.
+                                    - Monomodo: Un solo haz de luz, largas distancias (100+ km), costosa
+                                    - Multimodo: Múltiples haces, distancias cortas (2 km), más económica
+                                    Ventajas: Velocidades de Terabits/s, inmune a interferencias,  distancias enormes. Uso: Redes troncales, ISPs, datacenters. 
+                                </descripcion>
+                            </title>   
+                    </title>
+                       
+            </title>
+    </seccion>
+
+
+</doc>

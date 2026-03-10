@@ -10,58 +10,61 @@
     <seccion id="seguridad" nombre="Seguridad">
       <bloque titulo="Seguridad en Protocolos y Redes">
         <parrafo>
-            Proteger los datos en tránsito y en reposo es fundamental en el mundo actual de
-            ciberamenazas constantes. Las redes modernas implementan múltiples capas de seguridad.
+          Proteger los datos en tránsito y en reposo es fundamental en el mundo actual de
+          ciberamenazas constantes. Las redes modernas implementan múltiples capas de seguridad.
         </parrafo>
       </bloque>
       <bloque titulo="Tecnologías de Seguridad">
         <tarjetas>
           <tarjeta titulo="HTTPS" sub="HTTP Secure">
             <parrafo tipo="definicion">
-            Combina HTTP con cifrado SSL/TLS (Secure Sockets Layer / Transport
-            Layer Security). Cifra toda la comunicación entre navegador y servidor
-            web, protegiendo contraseñas, datos bancarios y comunicaciones
-            privadas. Esencial para comercio electrónico, banca online y cualquier sitio
-            que maneje información sensible. Los navegadores modernos marcan
-            sitios HTTP como "No seguros".
+              Combina HTTP con cifrado SSL/TLS (Secure Sockets Layer / Transport
+              Layer Security). Cifra toda la comunicación entre navegador y servidor
+              web, protegiendo contraseñas, datos bancarios y comunicaciones
+              privadas. Esencial para comercio electrónico, banca online y cualquier sitio
+              que maneje información sensible. Los navegadores modernos marcan
+              sitios HTTP como "No seguros".
             </parrafo>
           </tarjeta>
           <tarjeta titulo="VPN / IPsec" sub="VPN_IPsec">
             <parrafo tipo="definicion">
-           Las VPNs (Virtual Private Networks) crean "túneles" cifrados sobre redes
-            públicas (como Internet), permitiendo acceso remoto seguro a redes
-            corporativas. IPsec cifra cada paquete IP, protegiendo confidencialidad e
-            integridad. Fundamental para teletrabajo seguro, evitando que hackers
-            intercepten datos en Wi-Fi públicas o conexiones no confiables.
+              Las VPNs (Virtual Private Networks) crean "túneles" cifrados sobre redes
+              públicas (como Internet), permitiendo acceso remoto seguro a redes
+              corporativas. IPsec cifra cada paquete IP, protegiendo confidencialidad e
+              integridad. Fundamental para teletrabajo seguro, evitando que hackers
+              intercepten datos en Wi-Fi públicas o conexiones no confiables.
             </parrafo>
           </tarjeta>
           <tarjeta titulo="Firewalls" sub="Firewalls">
             <parrafo tipo="definicion">
-           Dispositivos (hardware) o software que actúan como barreras de
-            seguridad, filtrando el tráfico de red según reglas predefinidas. Bloquean
-            accesos no autorizados permitiendo solo conexiones legítimas. Funcionan
-            analizando direcciones IP de origen/destino, puertos, protocolos y patrones
-            de tráfico sospechosos. Pueden ser perimetrales (protegen toda la red) o
-            personales (protegen un PC individual).
+              Dispositivos (hardware) o software que actúan como barreras de
+              seguridad, filtrando el tráfico de red según reglas predefinidas. Bloquean
+              accesos no autorizados permitiendo solo conexiones legítimas. Funcionan
+              analizando direcciones IP de origen/destino, puertos, protocolos y patrones
+              de tráfico sospechosos. Pueden ser perimetrales (protegen toda la red) o
+              personales (protegen un PC individual).
             </parrafo>
           </tarjeta>
           <tarjeta titulo="WPA3" sub="WPA3">
             <parrafo tipo="definicion">
-            El estándar más reciente y seguro para proteger redes Wi-Fi (2018).
-            Mejora significativamente sobre WPA2 con cifrado más robusto (192-bit en
-            modo Enterprise), protección contra ataques de fuerza bruta a
-            contraseñas, y cifrado individualizado de sesiones (incluso en redes
-            públicas). WPA3-Personal es el mínimo recomendado para redes
-            domésticas y empresariales actuales.
+              El estándar más reciente y seguro para proteger redes Wi-Fi (2018).
+              Mejora significativamente sobre WPA2 con cifrado más robusto (192-bit en
+              modo Enterprise), protección contra ataques de fuerza bruta a
+              contraseñas, y cifrado individualizado de sesiones (incluso en redes
+              públicas). WPA3-Personal es el mínimo recomendado para redes
+              domésticas y empresariales actuales.
             </parrafo>
           </tarjeta>
         </tarjetas>
       </bloque>
       <bloque titulo="Defensa en Profundidad">
         <parrafo>
-            Principio de Defensa en Profundidad: La seguridad efectiva no depende de una sola tecnología, sino de múltiples capas complementarias. Una red
-            moderna debe combinar: cifrado de comunicaciones (HTTPS, VPN), control de acceso (Firewalls, autenticación), seguridad Wi-Fi (WPA3),
-            actualizaciones regulares de software, formación de usuarios contra phishing, y sistemas de detección de intrusiones (IDS/IPS).
+          Principio de Defensa en Profundidad: La seguridad efectiva no depende de una sola
+          tecnología, sino de múltiples capas complementarias. Una red
+          moderna debe combinar: cifrado de comunicaciones (HTTPS, VPN), control de acceso
+          (Firewalls, autenticación), seguridad Wi-Fi (WPA3),
+          actualizaciones regulares de software, formación de usuarios contra phishing, y sistemas
+          de detección de intrusiones (IDS/IPS).
         </parrafo>
       </bloque>
     </seccion>
@@ -70,8 +73,9 @@
     <seccion id="topologias" nombre="Topologías">
       <bloque titulo="Topologías de Red y Modos de Conexión">
         <parrafo>
-            La topología define la estructura física o lógica en la que están conectados los dispositivos de una red. Cada topología tiene ventajas, desventajas y
-            casos de uso específicos que determinan su idoneidad para diferentes escenarios.
+          La topología define la estructura física o lógica en la que están conectados los
+          dispositivos de una red. Cada topología tiene ventajas, desventajas y
+          casos de uso específicos que determinan su idoneidad para diferentes escenarios.
         </parrafo>
       </bloque>
       <bloque titulo="Tipos de Topologías">
@@ -83,23 +87,31 @@
           </tarjeta>
           <tarjeta titulo="Estrella">
             <parrafo>Todos los dispositivos conectados a un punto central (Switch o Hub).</parrafo>
-            <parrafo tipo="nota">Ventaja: Si falla un cable, solo ese dispositivo se desconecta; el resto funciona. Fácil diagnóstico y escalabilidad.</parrafo>
-            <parrafo tipo="nota">Desventaja: El punto central es crítico. Estándar actual en LANs Ethernet.</parrafo>
+            <parrafo tipo="nota">Ventaja: Si falla un cable, solo ese dispositivo se desconecta; el
+              resto funciona. Fácil diagnóstico y escalabilidad.</parrafo>
+            <parrafo tipo="nota">Desventaja: El punto central es crítico. Estándar actual en LANs
+              Ethernet.</parrafo>
           </tarjeta>
           <tarjeta titulo="Anillo">
             <parrafo>Todos los dispositivos conectados a un punto central (Switch o Hub).</parrafo>
-            <parrafo tipo="nota">Uso: Circuito cerrado donde los datos viajan en una dirección (o bidireccional en anillo dual). Cada nodo regenera la señal.</parrafo>
+            <parrafo tipo="nota">Uso: Circuito cerrado donde los datos viajan en una dirección (o
+              bidireccional en anillo dual). Cada nodo regenera la señal.</parrafo>
           </tarjeta>
           <tarjeta titulo="Malla">
             <parrafo>Todos (o muchos) nodos conectados entre sí directamente.</parrafo>
-            <parrafo tipo="nota">Ventaja: Máxima redundancia y robustez. Si falla un enlace, los datos toman rutas alternativas.</parrafo>
+            <parrafo tipo="nota">Ventaja: Máxima redundancia y robustez. Si falla un enlace, los
+              datos toman rutas alternativas.</parrafo>
             <parrafo tipo="nota">Desventaja: Coste alto.</parrafo>
-            <parrafo tipo="nota">Uso: Redes críticas (militares, satélites), Internet backbone, redes de sensores.</parrafo>
+            <parrafo tipo="nota">Uso: Redes críticas (militares, satélites), Internet backbone,
+              redes de sensores.</parrafo>
           </tarjeta>
           <tarjeta titulo="Arbol">
-            <parrafo>Múltiples topologías en estrella conectadas jerárquicamente a un backbone central.</parrafo>
-            <parrafo tipo="nota">Ventaja: Escalable, organizada por jerarquías (departamentos, plantas).</parrafo>
-            <parrafo tipo="nota">Uso: Edificios grandes, campus universitarios, empresas con estructura por divisiones.</parrafo>
+            <parrafo>Múltiples topologías en estrella conectadas jerárquicamente a un backbone
+              central.</parrafo>
+            <parrafo tipo="nota">Ventaja: Escalable, organizada por jerarquías (departamentos,
+              plantas).</parrafo>
+            <parrafo tipo="nota">Uso: Edificios grandes, campus universitarios, empresas con
+              estructura por divisiones.</parrafo>
           </tarjeta>
         </tarjetas>
       </bloque>
@@ -109,16 +121,18 @@
     <seccion id="modos" nombre="Modos de Conexión">
       <bloque titulo="Orientado a Conexión vs No Orientado">
         <tabla>
-          <col nombre="Protocolo"/>
-          <col nombre="Funcionamiento"/>
-          <col nombre="Características"/>
-          <col nombre="Ventajas"/>
-          <col nombre="Desventajas"/>
-          <col nombre="Uso"/>
+          <col nombre="Protocolo" />
+          <col nombre="Funcionamiento" />
+          <col nombre="Características" />
+          <col nombre="Ventajas" />
+          <col nombre="Desventajas" />
+          <col nombre="Uso" />
           <fila>
             <c>TCP</c>
-            <c>"Llama antes de hablar". Establece un canal dedicado mediante triple apretón de manos (SYN, SYN-ACK, ACK) antes de transmitir datos.</c>
-            <c>Garantiza orden y llegada de datos. Retransmite paquetes perdidos. Control de flujo y congestión.</c>
+            <c>"Llama antes de hablar". Establece un canal dedicado mediante triple apretón de manos
+              (SYN, SYN-ACK, ACK) antes de transmitir datos.</c>
+            <c>Garantiza orden y llegada de datos. Retransmite paquetes perdidos. Control de flujo y
+              congestión.</c>
             <c>Alta fiabilidad e integridad</c>
             <c>Mayor latencia</c>
             <c>Web, Email, Transferencia de archivos</c>
@@ -139,40 +153,50 @@
     <seccion id="hardware" nombre="Hardware">
       <bloque titulo="Medios de Transmisión">
         <tabla titulo="Cable Par Trenzado">
-          <col nombre="Categoría"/>
-          <col nombre="Velocidad"/>
-          <col nombre="Alcance"/>
-          <col nombre="Descripción"/>
+          <col nombre="Categoría" />
+          <col nombre="Velocidad" />
+          <col nombre="Alcance" />
+          <col nombre="Descripción" />
           <fila>
             <c>Cat5e</c>
             <c>1Gbps</c>
             <c>100m</c>
-            <c>Hasta 1 Gbps, 100m máx. Uso: Hogares, oficinas pequeñas. Económico y suficiente para la mayoría.</c>
+            <c>Hasta 1 Gbps, 100m máx. Uso: Hogares, oficinas pequeñas. Económico y suficiente para
+              la mayoría.</c>
           </fila>
           <fila>
             <c>Cat6</c>
             <c>10Gbps</c>
             <c>55m</c>
-            <c>Hasta 10 Gbps en 55m, 1 Gbps en 100m. Uso: Oficinas profesionales, estudios de diseño. Mejor blindaje contra interferencias.</c>
+            <c>Hasta 10 Gbps en 55m, 1 Gbps en 100m. Uso: Oficinas profesionales, estudios de
+              diseño. Mejor blindaje contra interferencias.</c>
           </fila>
           <fila>
             <c>Cat6a_7</c>
             <c>10Gbps</c>
             <c>100m</c>
-            <c>10 Gbps sostenidos en 100m. Uso: Datacenters, infraestructuras exigentes. Máximo blindaje (S/FTP).</c>
+            <c>10 Gbps sostenidos en 100m. Uso: Datacenters, infraestructuras exigentes. Máximo
+              blindaje (S/FTP).</c>
           </fila>
         </tabla>
 
         <tarjetas>
           <tarjeta titulo="Fibra Óptica Monomodo" sub="100km+">
-            <parrafo>Núcleo de 9 micrómetros. Un solo haz de luz. Distancias: 40-100+ km sin repetidores. Uso: Enlaces troncales ISP, conexiones entre ciudades, cables submarinos intercontinentales. Láser de alta precisión.</parrafo>
+            <parrafo>Núcleo de 9 micrómetros. Un solo haz de luz. Distancias: 40-100+ km sin
+              repetidores. Uso: Enlaces troncales ISP, conexiones entre ciudades, cables submarinos
+              intercontinentales. Láser de alta precisión.</parrafo>
           </tarjeta>
           <tarjeta titulo="Fibra Óptica Multimodo" sub="Hasta 2km">
-            <parrafo>Núcleo de 50-62.5 micrómetros. Múltiples haces de luz. Distancias: Hasta 2 km. Uso: Campus, edificios, datacenters internos. LED más económico. Velocidades: 10/40/100 Gbps.</parrafo>
+            <parrafo>Núcleo de 50-62.5 micrómetros. Múltiples haces de luz. Distancias: Hasta 2 km.
+              Uso: Campus, edificios, datacenters internos. LED más económico. Velocidades:
+              10/40/100 Gbps.</parrafo>
           </tarjeta>
         </tarjetas>
-        <parrafo tipo="nota">Ventajas Fibra: Inmunidad total a interferencias electromagnéticas, sin diafonía, distancias enormes, ancho de banda masivo (Terabits/s), seguridad (difícil interceptar luz)</parrafo>
-        <parrafo tipo="nota">Desventajas Fibra: Coste inicial más alto, requiere técnicos especializados para empalmes.</parrafo>
+        <parrafo tipo="nota">Ventajas Fibra: Inmunidad total a interferencias electromagnéticas, sin
+          diafonía, distancias enormes, ancho de banda masivo (Terabits/s), seguridad (difícil
+          interceptar luz)</parrafo>
+        <parrafo tipo="nota">Desventajas Fibra: Coste inicial más alto, requiere técnicos
+          especializados para empalmes.</parrafo>
       </bloque>
     </seccion>
 
@@ -180,38 +204,44 @@
     <seccion id="wifi" nombre="Wi-Fi">
       <bloque titulo="Estándares Wi-Fi">
         <tabla>
-          <col nombre="Wi-Fi"/>
-          <col nombre="Estándar"/>
-          <col nombre="Velocidad"/>
-          <col nombre="Frecuencia"/>
-          <col nombre="Descripción"/>
+          <col nombre="Wi-Fi" />
+          <col nombre="Estándar" />
+          <col nombre="Velocidad" />
+          <col nombre="Frecuencia" />
+          <col nombre="Descripción" />
           <fila>
             <c>Wi-Fi 3</c>
             <c>802.11b/g</c>
             <c>54Mbps</c>
             <c>2.4GHz</c>
-            <c>Banda saturadísima (interferencias con microondas, Bluetooth, teléfonos inalámbricos). Obsoleto.</c>
+            <c>Banda saturadísima (interferencias con microondas, Bluetooth, teléfonos
+              inalámbricos). Obsoleto.</c>
           </fila>
           <fila>
             <c>Wi-Fi 4</c>
             <c>802.11n</c>
             <c>600Mbps</c>
             <c>2.4-5GHz</c>
-            <c>Introduce MIMO (Multiple Input Multiple Output): múltiples antenas para mejor rendimiento. Gran avance en velocidad.</c>
+            <c>Introduce MIMO (Multiple Input Multiple Output): múltiples antenas para mejor
+              rendimiento. Gran avance en velocidad.</c>
           </fila>
           <fila>
             <c>Wi-Fi 5</c>
             <c>802.11ac</c>
             <c>3.5Gbps</c>
             <c>5GHz</c>
-            <c>El router puede comunicarse con múltiples dispositivos simultáneamente. Beamforming: Enfoca señal hacia dispositivos específicos. Estándar dominante 2013-2019.</c>
+            <c>El router puede comunicarse con múltiples dispositivos simultáneamente. Beamforming:
+              Enfoca señal hacia dispositivos específicos. Estándar dominante 2013-2019.</c>
           </fila>
           <fila>
             <c>Wi-Fi 6</c>
             <c>802.11ax</c>
             <c>9.6Gbps</c>
             <c>2.4-5GHz</c>
-            <c>Revolución en eficiencia: OFDMA permite servir múltiples dispositivos en cada transmisión. TWT (Target Wake Time) reduce consumo en IoT. Ideal para ambientes densos: estadios, aeropuertos, hogares con 50+ dispositivos IoT. El futuro es Wi-Fi 6E.</c>
+            <c>Revolución en eficiencia: OFDMA permite servir múltiples dispositivos en cada
+              transmisión. TWT (Target Wake Time) reduce consumo en IoT. Ideal para ambientes
+              densos: estadios, aeropuertos, hogares con 50+ dispositivos IoT. El futuro es Wi-Fi
+              6E.</c>
           </fila>
         </tabla>
       </bloque>
