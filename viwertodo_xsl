@@ -1,0 +1,201 @@
+```xsl
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:output method="html" encoding="UTF-8" indent="yes" />
+  <xsl:strip-space elements="*" />
+
+  <!-- Root -->
+  <xsl:template match="/pdf_redes">
+    <html lang="{@lang}">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+          <xsl:value-of select="metadata/titulo" />
+        </title>
+        <style>
+          body { font-family: system-ui, sans-serif; margin: 0; line-height: 1.6; color: #1f2937; background: #f9fafb; }
+          .wrap { max-width: 1200px; margin: 0 auto; padding: 24px; }
+          .grid { display: grid; grid-template-columns: 250px 1fr; gap: 24px; }
+          nav { position: sticky; top: 24px; background: white; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+          nav h3 { margin: 0 0 12px; font-size: 14px; color: #64748b; text-transform: uppercase; }
+          nav a { display: block; padding: 8px; color: #334155; text-decoration: none; font-size: 14px; border-radius: 4px; }
+          nav a:hover { background: #eff6ff; }
+          main { }
+          .page { margin-bottom: 48px; }
+          .cover { display: flex; align-items: center; justify-content: space-between; background: linear-gradient(to right, white, #eff6ff); padding: 48px; border-radius: 8px; }
+          .cover-text { max-width: 50%; }
+          .cover h1 { font-size: 32px; color: #1d4ed8; margin: 0 0 8px; }
+          .cover p { font-size: 18px; color: #475569; }
+          .cover img { max-width: 50%; border-radius: 8px; }
+          section h2 { font-size: 24px; color: #1d4ed8; margin: 24px 0 12px; }
+          .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+          .card { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 16px; }
+          .card h3 { font-size: 18px; color: #1d4ed8; margin: 0 0 8px; }
+          .card p { margin: 8px 0; }
+          ul { list-style-type: disc; padding-left: 20px; }
+          .layers { display: flex; flex-direction: column; align-items: stretch; gap: 8px; max-width: 600px; margin: 0 auto; }
+          .layer { display: flex; align-items: center; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 12px; }
+          .layer-icon { font-size: 24px; margin-right: 12px; flex-shrink: 0; }
+          .layer-number { font-weight: bold; margin-right: 8px; }
+          .layer-name { font-weight: bold; color: #1d4ed8; }
+          .layer-desc { font-size: 14px; color: #475569; }
+          table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+          th, td { border: 1px solid #bfdbfe; padding: 12px; text-align: left; }
+          th { background: #dbeafe; color: #1d4ed8; }
+          .protocolo-box { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 16px; margin: 16px 0; }
+          .protocolo-box h4 { margin: 0 0 8px; color: #1d4ed8; }
+          @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } nav { position: relative; } .cover { flex-direction: column; } .cover-text, .cover img { max-width: 100%; } }
+        </style>
+      </head>
+      <body>
+        <div class="wrap grid">
+          <nav>
+            <h3>Índice</h3>
+            <xsl:for-each select="documento/contenido/lista/elemento">
+              <a href="#page-{position()}">
+                <xsl:value-of select="." />
+              </a>
+            </xsl:for-each>
+          </nav>
+          <main>
+            <xsl:apply-templates select="documento/pagina" />
+          </main>
+        </div>
+      </body>
+    </html>
+  </xsl:template>
+
+  <!-- Pagina -->
+  <xsl:template match="pagina">
+    <div class="page" id="page-{@numero}">
+      <xsl:choose>
+        <xsl:when test="@numero = '1'">
+          <div class="cover">
+            <div class="cover-text">
+              <h1><xsl:value-of select="seccion/titulo" /></h1>
+              <p><xsl:value-of select="seccion/parrafo" /></p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc71?q=80&amp;w=2000&amp;auto=format&amp;fit=crop" alt="Data center" />
+          </xsl:when>
+        <xsl:otherwise>
+          <xsl:apply-templates />
+        </xsl:otherwise>
+      </xsl:choose>
+    </div>
+  </xsl:template>
+
+  <!-- Seccion -->
+  <xsl:template match="seccion">
+    <section>
+      <h2><xsl:value-of select="titulo" /></h2>
+      <xsl:apply-templates select="parrafo" />
+      <xsl:if test="subseccion">
+        <div class="cards">
+          <xsl:apply-templates select="subseccion" />
+        </div>
+      </xsl:if>
+      <xsl:apply-templates select="capas" />
+      <xsl:apply-templates select="tabla" />
+      <xsl:apply-templates select="*[not(self::titulo|self::parrafo|self::subseccion|self::capas|self::tabla)]" />
+    </section>
+  </xsl:template>
+
+  <!-- Subseccion -->
+  <xsl:template match="subseccion">
+    <div class="card">
+      <h3><xsl:value-of select="subtitulo" /></h3>
+      <xsl:apply-templates select="parrafo" />
+      <xsl:apply-templates select="lista" />
+      <xsl:apply-templates select="subsubseccion" />
+    </div>
+  </xsl:template>
+
+  <!-- Subsubseccion -->
+  <xsl:template match="subsubseccion">
+    <h4><xsl:value-of select="subtitulo" /></h4>
+    <xsl:apply-templates />
+  </xsl:template>
+
+  <!-- Parrafo -->
+  <xsl:template match="parrafo">
+    <p><xsl:value-of select="." /></p>
+  </xsl:template>
+
+  <!-- Lista -->
+  <xsl:template match="lista">
+    <xsl:choose>
+      <xsl:when test="@tipo='vineta'">
+        <ul>
+          <xsl:for-each select="elemento">
+            <li><xsl:value-of select="." /></li>
+          </xsl:for-each>
+        </ul>
+      </xsl:when>
+      <xsl:when test="@tipo='numerada'">
+        <ol>
+          <xsl:for-each select="elemento">
+            <li><xsl:value-of select="." /></li>
+          </xsl:for-each>
+        </ol>
+      </xsl:when>
+    </xsl:choose>
+  </xsl:template>
+
+  <!-- Capas (OSI) -->
+  <xsl:template match="capas">
+    <div class="layers">
+      <xsl:for-each select="capa">
+        <div class="layer">
+          <span class="layer-icon">
+            <xsl:choose>
+              <xsl:when test="@numero='7'">📱</xsl:when>
+              <xsl:when test="@numero='6'">📄</xsl:when>
+              <xsl:when test="@numero='5'">🤝</xsl:when>
+              <xsl:when test="@numero='4'">🚚</xsl:when>
+              <xsl:when test="@numero='3'">🌐</xsl:when>
+              <xsl:when test="@numero='2'">🔗</xsl:when>
+              <xsl:when test="@numero='1'">⚡</xsl:when>
+            </xsl:choose>
+          </span>
+          <span class="layer-number"><xsl:value-of select="nombre" /></span>
+          <span class="layer-desc"><xsl:value-of select="descripcion" /></span>
+        </div>
+      </xsl:for-each>
+    </div>
+  </xsl:template>
+
+  <!-- Protocolo -->
+  <xsl:template match="protocolo">
+    <div class="protocolo-box">
+      <h4><xsl:value-of select="@nombre" /></h4>
+      <xsl:apply-templates />
+    </div>
+  </xsl:template>
+
+  <!-- Tabla -->
+  <xsl:template match="tabla">
+    <h4><xsl:value-of select="@titulo" /></h4>
+    <table>
+      <thead>
+        <tr>
+          <xsl:for-each select="encabezado/celda">
+            <th><xsl:value-of select="." /></th>
+          </xsl:for-each>
+        </tr>
+      </thead>
+      <tbody>
+        <xsl:for-each select="fila">
+          <tr>
+            <xsl:for-each select="celda">
+              <td><xsl:value-of select="." /></td>
+            </xsl:for-each>
+          </tr>
+        </xsl:for-each>
+      </tbody>
+    </table>
+  </xsl:template>
+
+</xsl:stylesheet>
+```
