@@ -36,9 +36,14 @@
                     </tarjeta>
                     <tarjeta titulo="Seguridad">
                         <parrafo tipo="definicion">
-                            Protección integral mediante múltiples capas: Firewalls, cifrado de
-                            datos, VPNs para conexiones
-                            remotas y sistemas de detección de intrusiones.
+                                 Protección integral contra amenazas
+                                digitales (malware, phishing, ataques DDoS,
+                                ransomware) mediante múltiples capas de
+                                defensa:  Firewalls que filtran tráfico no autorizado,
+                                    cifrado de datos en tránsito, VPNs para
+                                    conexiones remotas seguras, y sistemas de
+                                    detección de intrusiones.
+
                         </parrafo>
                     </tarjeta>
                 </tarjetas>
