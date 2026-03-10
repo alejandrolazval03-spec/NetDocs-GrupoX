@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="estilo-pdf.xsl"?>
+<?xml-stylesheet type="text/xsl" href="viewer_simpleSong.xsl"?>
 <pdf_redes lang="es">
+    <metadata>
+        <titulo>Redes y Seguridad</titulo>
+        <subtitulo>Apuntes de Redes (Alejandro)</subtitulo>
+    </metadata>
     <documento titulo="Caracteristicas de las Redes de Computadoras">
 
 
