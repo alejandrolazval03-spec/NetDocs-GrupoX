@@ -160,6 +160,8 @@
             </bloque>
         </seccion>
     </secciones>
+
+    <!--4-->
     <secciones>
         <seccion id="p4" nombre="Tipos de Conexión: Guiadas e Inalámbricas">
             <bloque titulo="Conexiones por Cable (Medios Guiados)">
@@ -201,6 +203,7 @@
                 <parrafo tipo="nota">Ventajas: Velocidades de Terabits/s, inmune a interferencias,
                     distancias enormes. Uso: Redes troncales, ISPs, datacenters.</parrafo>
             </bloque>
+
             <bloque titulo="Conexiones Inalámbricas (Medios No Guiados)">
                 <parrafo>
                     Utilizan ondas electromagnéticas para transmitir datos sin cables físicos,
