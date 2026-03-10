@@ -17,11 +17,11 @@
         <parrafo>
           El estándar dominante en redes LAN. Utiliza cables de cobre con pares de hilos trenzados que reducen interferencias electromagnéticas.
         </parrafo>
-        <lista titulo="Categorías y Velocidades">
-          <item>Cat5e: Hasta 1 Gbps, 100 metros máximo.</item>
-          <item>Cat6: Hasta 10 Gbps en distancias cortas.</item>
-          <item>Cat6a/Cat7: 10 Gbps sostenidos, blindaje mejorado.</item>
-        </lista>
+        <bloque titulo="Categorías y Velocidades">
+          <parrafo>Cat5e: Hasta 1 Gbps, 100 metros máximo.</parrafo>
+          <parrafo>Cat6: Hasta 10 Gbps en distancias cortas.</parrafo>
+          <parrafo>Cat6a/Cat7: 10 Gbps sostenidos, blindaje mejorado.</parrafo>
+        </bloque>
         <parrafo tipo="nota">Ventajas: Alta velocidad, bajo coste, estabilidad. Uso: Oficinas, hogares, centros de datos.</parrafo>
       </bloque>
       <bloque titulo="Fibra Óptica">
@@ -47,11 +47,11 @@
         <parrafo>
           Utiliza ondas de radio en las bandas de 2.4 GHz, 5 GHz y 6 GHz (Wi-Fi 6E). Permite movilidad total dentro del área de cobertura.
         </parrafo>
-        <lista titulo="Especificaciones">
-          <item>Alcance: 30-100 metros (interior/exterior).</item>
-          <item>Velocidad: Hasta 9.6 Gbps (802.11ax Wi-Fi 6).</item>
-          <item>Flexibilidad para dispositivos móviles.</item>
-        </lista>
+        <bloque titulo="Especificaciones">
+          <parrafo>Alcance: 30-100 metros (interior/exterior).</parrafo>
+          <parrafo>Velocidad: Hasta 9.6 Gbps (802.11ax Wi-Fi 6).</parrafo>
+          <parrafo>Flexibilidad para dispositivos móviles.</parrafo>
+        </bloque>
         <parrafo tipo="nota">Desventajas: Susceptible a interferencias, menor seguridad que cable, velocidad variable según distancia y obstáculos.</parrafo>
       </bloque>
       <bloque titulo="Redes Híbridas">
@@ -125,12 +125,12 @@
         </tarjetas>
       </bloque>
       <bloque titulo="Protocolos de Aplicación y Red">
-        <lista titulo="Protocolos Esenciales">
-          <item>IP (Internet Protocol): El "GPS" de Internet. Direccionamiento lógico (ej: 192.168.1.1) y enrutamiento de paquetes. Define cómo fragmentar datos y cómo los routers determinan la mejor ruta hacia el destino.</item>
-          <item>HTTP/HTTPS: HTTP: Protocolo de transferencia de hipertexto. Base de la web. HTTPS: HTTP + cifrado SSL/TLS. Protege datos sensibles (contraseñas, tarjetas de crédito). El candado en el navegador indica HTTPS activo.</item>
-          <item>SMTP/IMAP/POP3: SMTP: Envío de correos. IMAP: Recepción sincronizada (mensajes en servidor). POP3: Recepción descargando al dispositivo local. IMAP es el estándar moderno recomendado.</item>
-          <item>DNS (Domain Name System): Traduce nombres de dominio legibles (www.ejemplo.com) a direcciones IP numéricas (93.184.216.34). La "guía telefónica" de Internet. Sin DNS tendríamos que memorizar números IP.</item>
-        </lista>
+        <bloque titulo="Protocolos Esenciales">
+          <parrafo>IP (Internet Protocol): El "GPS" de Internet. Direccionamiento lógico (ej: 192.168.1.1) y enrutamiento de paquetes. Define cómo fragmentar datos y cómo los routers determinan la mejor ruta hacia el destino.</parrafo>
+          <parrafo>HTTP/HTTPS: HTTP: Protocolo de transferencia de hipertexto. Base de la web. HTTPS: HTTP + cifrado SSL/TLS. Protege datos sensibles (contraseñas, tarjetas de crédito). El candado en el navegador indica HTTPS activo.</parrafo>
+          <parrafo>SMTP/IMAP/POP3: SMTP: Envío de correos. IMAP: Recepción sincronizada (mensajes en servidor). POP3: Recepción descargando al dispositivo local. IMAP es el estándar moderno recomendado.</parrafo>
+          <parrafo>DNS (Domain Name System): Traduce nombres de dominio legibles (www.ejemplo.com) a direcciones IP numéricas (93.184.216.34). La "guía telefónica" de Internet. Sin DNS tendríamos que memorizar números IP.</parrafo>
+        </bloque>
       </bloque>
       <bloque titulo="Tabla de Protocolos de Comunicación">
         <parrafo>Esta tabla es fundamental para ver la diferencia entre "calidad" y "velocidad".</parrafo>
