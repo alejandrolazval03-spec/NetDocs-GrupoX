@@ -49,6 +49,7 @@
     </metadata>
     <secciones>
         <seccion id="S1" nombre="Fundamentos">
+             <!-- Hay un error aqui la etiqueta es error -->
             <eror  id="B1" titulo="Definición y Propiedades Clave">
                 <parrafo>Una red de computadoras es un conjunto de dispositivos interconectados que
                     comparten recursos (impresoras, servidores, almacenamiento) e información de
