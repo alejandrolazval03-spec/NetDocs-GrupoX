@@ -47,14 +47,14 @@
         <titulo>Redes y Seguridad</titulo>
         <subtitulo>Apuntes de Redes (Rubén Galay, Song Qi, Alejandro Lazaro)</subtitulo>
     </metadata>
-    <secciones>
+    <error>
         <seccion id="S1" nombre="Fundamentos">
-            <eror  id="B1" titulo="Definición y Propiedades Clave">
+            <bloque id="B1" titulo="Definición y Propiedades Clave">
                 <parrafo>Una red de computadoras es un conjunto de dispositivos interconectados que
                     comparten recursos (impresoras, servidores, almacenamiento) e información de
                     manera eficiente. Esta infraestructura digital es el pilar que permite la
                     comunicación global instantánea.</parrafo>
-            </eror>
+            </bloque>
             <bloque id="B2" titulo="Propiedades de la Red">
                 <tarjetas>
                     <tarjeta titulo="Interoperabilidad">
@@ -817,5 +817,5 @@
                 </tabla>
             </bloque>
         </seccion>
-    </secciones>
+    </error>
 </tema>
