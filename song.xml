@@ -222,3 +222,6 @@
         </seccion>
     </pagina>
 </documento>
+
+
+<!-- con xml nosotros crear un xsl y luego dentro de xsl con xml vacio que no ha dado rellenarlo -->
