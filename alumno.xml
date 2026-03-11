@@ -47,7 +47,7 @@
         <titulo>Redes y Seguridad</titulo>
         <subtitulo>Apuntes de Redes (Rubén Galay, Song Qi, Alejandro Lazaro)</subtitulo>
     </metadata>
-    <error>
+    <secciones>
         <seccion id="S1" nombre="Fundamentos">
             <bloque id="B1" titulo="Definición y Propiedades Clave">
                 <parrafo>Una red de computadoras es un conjunto de dispositivos interconectados que
@@ -817,5 +817,5 @@
                 </tabla>
             </bloque>
         </seccion>
-    </error>
+    </secciones>
 </tema>
