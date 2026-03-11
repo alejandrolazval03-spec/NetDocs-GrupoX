@@ -11,9 +11,9 @@
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>
+        <etiqutaerroneo>
           <xsl:value-of select="metadata/titulo" />
-        </title>
+        </etiqutaerroneo>
         <style>
           body { font-family: system-ui, sans-serif;margin: 0;line-height: 1.6;color:
           #1e293b;background: #cde2f7 }
